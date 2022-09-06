@@ -96,7 +96,7 @@ body {
   text-align: start;
 }
 .header.over {
-  background: linear-gradient(180deg, rgba(1, 1, 27, 1) 0%, rgba(0, 0, 54, 1) 80%, rgba(0, 0, 54, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 54, 1) 0%, rgba(0, 0, 54, 1) 70%, rgba(0, 0, 54, 0) 100%);
   background-clip: content-box;
 }
 .header a {
@@ -114,6 +114,7 @@ body {
 
 .header.over .dep2 li a:hover {
   color: #30a34a;
+  text-decoration: underline;
 }
 .header.over .gnb .dep1 li:hover .dep1_a:before {
   width: 100%;
@@ -186,38 +187,79 @@ body {
   width: 90%;
 }
 .slide-img {
-  background-image: url(images/bg-main-support.jpg);
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
 }
-#prev {
-  width: auto;
+#simg01 {
+  background-image: url(../images/엇갈린\ 투셀렉크.jpg);
+}
+#simg02 {
+  background-image: url(../images/룩스빛아트컴퍼니.JPG);
+}
+#simg03 {
+  background-image: url(../images/무브먼트프로젝트도로시.jpg);
+}
+#simg04 {
+  background-image: url(../images/blackToe.jpg);
+}
+#simg05 {
+  background-image: url(../images/온앤오프무용단.JPG);
+}
+#simg06 {
+  background-image: url(../images/플라멩코델솔.jpg);
+}
+#simg07 {
+  background-image: url(../images/홍댄스컴퍼니.jpg);
+}
+#simg08 {
+  background-image: url(../images/온몸컴퍼니.png);
+}
+#simg09 {
+  background-image: url(../images/W2Project.jpg);
+}
+#simg10 {
+  background-image: url(../images/afterGlow.png);
+}
+#simg11 {
+  background-image: url(../images/danzaMobileCompany.jpeg);
+}
+#simg12 {
+  background-image: url(../images/LegacyCircus.jpeg);
+}
+#simg13 {
+  background-image: url(../images/verfitoPowerOfValance.jpg);
+}
+
+.prevArrWrap {
+  width: 20%;
   position: absolute;
   top: 50%;
-  left: 2%;
+  left: 0;
   transform: translate(-2%, -50%);
 }
-#prev img,
-#next img {
+.nextArrWrap {
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-2%, -50%);
+}
+
+.prevArrWrap img,
+.nextArrWrap img {
   width: 100%;
 }
-#next {
-  position: absolute;
-  top: 50%;
-  right: 2%;
-  transform: translate(-2%, -50%);
-}
+
 .slick-slide-wrap {
   display: flex;
 }
 .slide-text {
   width: 50%;
-  height: 250px;
   color: #fff;
   position: absolute;
-  top: 105px;
+  top: 10%;
   right: 0;
 }
 .slide-text-tit {
@@ -289,7 +331,7 @@ body {
 /* kiada-vod */
 .kiada-vod {
   width: 100%;
-  padding: 72px 0;
+  padding: 72px 80px;
   box-sizing: border-box;
 }
 .vod-wrap {
@@ -326,8 +368,11 @@ body {
 }
 /* ticker */
 .tickerwrapper {
+  overflow: hidden;
+  white-space: no-wrap;
   position: relative;
-  width: 100%;
+  width: 150%;
+  margin-left: -100px;
   cursor: pointer;
   transform: rotate(-6deg);
   border-top: 1px solid #fff;
@@ -385,7 +430,7 @@ body {
   border-radius: 1.5em;
 }
 
-/* kiada-message */
+/* kiada-message 
 .kiada-message {
   width: 100%;
   padding: 140px 19px;
@@ -531,7 +576,7 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-
+*/
 /*support  */
 .kiada-support {
   width: 100%;
@@ -623,4 +668,101 @@ body {
   line-height: 150%;
   letter-spacing: -0.04em;
   color: #ffffff;
+}
+
+.kiada-cheer {
+  width: 100%;
+  padding: 0 80px;
+  margin-top: 312px;
+  margin-bottom: 112px;
+  box-sizing: border-box;
+}
+.cheer-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cheer-title {
+  margin-bottom: 8px;
+  font-size: 64px;
+  line-height: 82%;
+
+  /* or 52px */
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  font-family: citizen, sans-serif;
+  color: #ffffff;
+  text-align: left;
+}
+.cheer-text {
+  margin-bottom: 40px;
+  font-size: 28px;
+  line-height: 133%;
+
+  /* or 37px */
+  letter-spacing: -0.04em;
+
+  color: #ffffff;
+}
+.cheer-video-wrap {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.cheer-video-wrap img {
+  width: 100%;
+  z-index: 9999;
+}
+.cheer-video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  zoom: 2;
+}
+.cheer-video-text {
+  position: absolute;
+  bottom: 48px;
+  left: 80px;
+}
+.name-txt01 {
+  font-size: 27px;
+  color: #30a34a;
+  font-weight: 600;
+}
+.job-txt01 {
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+.message-wrap {
+  margin-top: 80px;
+}
+.messages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.message-box {
+  width: calc(50% - 20px);
+  padding: 80px;
+  box-sizing: border-box;
+  font-size: 25px;
+  line-height: 133%;
+
+  /* or 33px */
+  letter-spacing: -0.04em;
+
+  color: #ffffff;
+  background-color: #19194a;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.nomargin {
+  margin-right: 0px;
 }

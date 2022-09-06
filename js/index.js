@@ -51,4 +51,12 @@ jQuery(function ($) {
     nextArrow: $("#next"),
     prevArrow: $("#prev"),
   });
+
+  $(".mo-slick").slick({
+    infinite: true,
+    fade: true,
+    cssEase: "linear",
+    nextArrow: $("#m-next"),
+    prevArrow: $("#m-prev"),
+  });
 });

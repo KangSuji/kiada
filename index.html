@@ -7,6 +7,7 @@
     <!-- font -->
     <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <!-- jquery -->
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
@@ -26,6 +27,87 @@
   </head>
   <body>
     <div id="wrap">
+      <div class="mobile-header">
+        <div class="header-center">
+          <a href="javascript:void(0)" class="logo">
+            <img src="./images/Logo-m.png" />
+          </a>
+          <span class="open_btn">
+            <img src="./images/mobile menu.png" />
+          </span>
+          <div class="mobile-gnb_wrap">
+            <div class="mobile-gnb hide">
+              <ul class="dep1">
+                <li id="about" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li id="show" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 공연프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">해외작</a></li>
+                    <li><a href="#">국내작</a></li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li id="show2" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 부대프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">댄스워크숍</a></li>
+                    <li><a href="#">국제학술심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li id="kiadas" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li id="news" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li id="history" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">HISTROY</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li id="contact" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="mobile-bg hide"></div>
+            </div>
+            <!-- //mobile-gnb -->
+          </div>
+          <!-- // mobile-gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </div>
       <header class="header">
         <div class="header-center">
           <div class="gnb_wrap">
@@ -105,9 +187,6 @@
                 </li>
                 <li>
                   <a href="#" class="dep1_a">CONTACT US</a>
-                  <ul class="dep2">
-                    <li><a href="javascript:void(0)"></a></li>
-                  </ul>
                 </li>
               </ul>
             </div>
@@ -123,38 +202,246 @@
           <img src="images/front_img-2_1.png" class="front2 rellax" data-rellax-speed="-0.4" />
           <img src="images/_back_img_1.png" class="back rellax" data-rellax-speed="2" />
         </div>
+        <!-- 모바일 메인 -->
+        <div class="mo-main">
+          <section class="m-main1">
+            <img src="images/main_3.svg" class="mo-front1" />
+            <img src="images/Group(2).svg" class="mo-front2 rellax" data-rellax-speed="-0.4" />
+          </section>
+          <section class="m-main2">
+            <img src="images/right-side.svg" class="mo-front5-1" />
+            <img src="images/left_2.svg" class="mo-front3" />
+            <img src="images/Group.svg" class="mo-front4 rellax" data-rellax-speed="-0.2" />
+            <img src="images/Group84.svg" class="mo-front5 rellax" data-rellax-speed="-0.2" />
+          </section>
+          <section class="m-main3">
+            <img src="images/mo-4.svg" class="mo-front6" />
+            <img src="images/txt1.svg" class="mo-front7 rellax" data-rellax-speed="-0.1" />
+            <img src="images/txt2.svg" class="mo-front8 rellax" data-rellax-speed="-0.1" />
+          </section>
+          <section class="m-main4">
+            <img src="images/img.svg" class="mo-front9" />
+          </section>
+        </div>
         <!-- //main-visual -->
         <div class="slide" data-aos="zoom-in">
-          <div class="slick-slide-wrap">
+          <div class="slick-slide-wrap pc-slick">
             <div class="slide-img-wrap">
               <div class="slide-text">
-                <div class="slide-text-tit">DANCE TITLE DANCE TITLE DANCE TITLE DANCE TIT...</div>
+                <div class="slide-text-tit">엇갈린 투셀렉크</div>
                 <div class="slide-text-txt">22. 11. 2. 15:00→</div>
               </div>
-              <img src="images/Exclude2.png" class="slide-img" />
+              <img src="images/Exclude2.png" class="slide-img" id="simg01" />
             </div>
             <div class="slide-img-wrap">
               <div class="slide-text">
-                <div class="slide-text-tit">2DANCE TITLE DANCE TITLE DANCE TITLE DANCE TIT...</div>
+                <div class="slide-text-tit">룩스 빛 아트 컴퍼니</div>
                 <div class="slide-text-txt">22. 11. 2. 15:00→</div>
               </div>
-              <img src="images/Exclude2.png" class="slide-img" />
+              <img src="images/Exclude2.png" class="slide-img" id="simg02" />
+            </div>
+            <div class="slide-img-wrap">
+              <div class="slide-text">
+                <div class="slide-text-tit">무브먼트프로젝트도로시</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/Exclude2.png" class="slide-img" id="simg03" />
+            </div>
+            <div class="slide-img-wrap">
+              <div class="slide-text">
+                <div class="slide-text-tit">블랙토</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/Exclude2.png" class="slide-img" id="simg04" />
+            </div>
+            <div class="slide-img-wrap">
+              <div class="slide-text">
+                <div class="slide-text-tit">온앤오프무용단</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/Exclude2.png" class="slide-img" id="simg05" />
+            </div>
+            <div class="slide-img-wrap">
+              <div class="slide-text">
+                <div class="slide-text-tit">플라멩코델솔</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/Exclude2.png" class="slide-img" id="simg06" />
+            </div>
+            <div class="slide-img-wrap">
+              <div class="slide-text">
+                <div class="slide-text-tit">홍댄스컴퍼니</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/Exclude2.png" class="slide-img" id="simg07" />
+            </div>
+            <div class="slide-img-wrap">
+              <div class="slide-text">
+                <div class="slide-text-tit">온몸컴퍼니</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/Exclude2.png" class="slide-img" id="simg08" />
+            </div>
+            <div class="slide-img-wrap">
+              <div class="slide-text">
+                <div class="slide-text-tit">W2Project</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/Exclude2.png" class="slide-img" id="simg09" />
+            </div>
+            <div class="slide-img-wrap">
+              <div class="slide-text">
+                <div class="slide-text-tit">afterGlow</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/Exclude2.png" class="slide-img" id="simg10" />
+            </div>
+            <div class="slide-img-wrap">
+              <div class="slide-text">
+                <div class="slide-text-tit">danzaMobileCompany</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/Exclude2.png" class="slide-img" id="simg11" />
+            </div>
+            <div class="slide-img-wrap">
+              <div class="slide-text">
+                <div class="slide-text-tit">LegacyCircus</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/Exclude2.png" class="slide-img" id="simg12" />
+            </div>
+            <div class="slide-img-wrap">
+              <div class="slide-text">
+                <div class="slide-text-tit">verfitoPowerOfValance</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/Exclude2.png" class="slide-img" id="simg13" />
             </div>
           </div>
-          <img src="./images/Slide-Arw-prev.png" id="prev" />
-          <img src="./images/Slide-Arw-next.png" id="next" />
+          <div class="prevArrWrap">
+            <img src="./images/Slide-Arw-prev.png" id="prev" />
+          </div>
+          <div class="nextArrWrap">
+            <img src="./images/Slide-Arw-next.png" id="next" />
+          </div>
+          <!-- 모바일 slick -->
+          <div class="mo-slick">
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">엇갈린 투셀렉크</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/엇갈린 투셀렉크.jpg" class="mo-slide-img" />
+            </div>
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">룩스빛아트컴퍼니.JPG</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/룩스빛아트컴퍼니.JPG" class="mo-slide-img" />
+            </div>
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">무브먼트프로젝트도로시.jpg</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/무브먼트프로젝트도로시.jpg" class="mo-slide-img" />
+            </div>
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">blackToe</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/blackToe.jpg" class="mo-slide-img" />
+            </div>
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">온앤오프무용단</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/온앤오프무용단.JPG" class="mo-slide-img" />
+            </div>
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">플라멩코델솔</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/플라멩코델솔.jpg" class="mo-slide-img" />
+            </div>
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">홍댄스컴퍼니</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/홍댄스컴퍼니.jpg" class="mo-slide-img" />
+            </div>
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">온몸컴퍼니</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/온몸컴퍼니.png" class="mo-slide-img" />
+            </div>
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">W2Project</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/W2Project.jpg" class="mo-slide-img" />
+            </div>
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">afterGlow</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/afterGlow.png" class="mo-slide-img" />
+            </div>
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">danzaMobileCompany</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/danzaMobileCompany.jpeg" class="mo-slide-img" />
+            </div>
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">LegacyCircus</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/LegacyCircus.jpeg" class="mo-slide-img" />
+            </div>
+            <div class="m-slide-img-wrap">
+              <div class="m-slide-text">
+                <div class="slide-text-tit">verfitoPowerOfValance</div>
+                <div class="slide-text-txt">22. 11. 2. 15:00→</div>
+              </div>
+              <img src="images/verfitoPowerOfValance.jpg" class="mo-slide-img" />
+            </div>
+          </div>
+          <div class="m-prevArrWrap">
+            <img src="./images/Slide-Arw-prev.png" id="m-prev" />
+          </div>
+          <div class="m-nextArrWrap">
+            <img src="./images/Slide-Arw-next.png" id="m-next" />
+          </div>
         </div>
+
         <!-- // slide -->
 
-        <div class="kiada-link">
+        <div class="kiada-link" data-aos="zoom-in">
           <div class="link-text">
-            <div class="link-text-tit" data-aos="zoom-in">Korea International Accessible Dance Festival 2022</div>
-            <div class="link-text-txt" data-aos="zoom-in">대한민국을 플랫폼으로 개최되는 국제적 범위의 무용을 사랑하는 누구나 접근 가능한 무용 축제</div>
+            <div class="link-text-tit">Korea International Accessible Dance Festival 2022</div>
+            <div class="link-text-txt">대한민국을 플랫폼으로 개최되는 국제적 범위의 무용을 사랑하는 누구나 접근 가능한 무용 축제</div>
           </div>
           <div class="link-box">
             <img src="images/link-1.png" data-aos="zoom-in" />
             <img src="images/link-2.png" data-aos="zoom-in" />
             <img src="images/link-3.png" data-aos="zoom-in" />
+          </div>
+          <div class="m-link-box">
+            <img src="images/m-link1.svg" />
+            <img src="images/m-link2.svg" />
+            <img src="images/m-link3.svg" />
           </div>
         </div>
         <!-- //kida-link -->
@@ -169,8 +456,9 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-            <div class="vod-title">Teaser</div>
           </div>
+          <div class="vod-title">Teaser</div>
+          <!-- 
           <div class="vod-wrap" id="vod-2">
             <iframe
               width="1280"
@@ -195,8 +483,9 @@
               allowfullscreen
             ></iframe>
             <div class="vod-title">TEAM NAME</div>
-          </div>
+          </div> -->
         </div>
+
         <!-- //vod -->
         <!-- year -->
         <div class="tickerwrapper">
@@ -211,7 +500,7 @@
           </div>
         </div>
         <!--// year -->
-        <!-- message -->
+        <!-- message
         <div class="kiada-message">
           <div class="message-wrap">
             <div class="message" id="msg1">
@@ -269,7 +558,80 @@
             </div>
           </div>
         </div>
+         -->
         <!--// message -->
+        <div class="kiada-cheer">
+          <div class="cheer-title">CHEERS</div>
+          <div class="cheer-text">응원메세지</div>
+          <div class="cheer-wrap">
+            <div class="cheer-video-wrap">
+              <iframe
+                width="1475"
+                height="823"
+                src="https://www.youtube.com/embed/3XCGoP2ItZE"
+                title="[KIADA2021] Teaser - On&Off Dance Company '웜바디' ｜ 제6회 대한민국장애인국제무용제"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <img src="./images/cheers-wrap.png" />
+              <div class="cheer-video-text">
+                <div class="name-txt01">팝핀현준</div>
+                <div class="job-txt01">댄서</div>
+              </div>
+            </div>
+            <div class="message-wrap">
+              <div class="messages">
+                <div class="message-box">
+                  <p>
+                    안녕하세요. 국립발레단 단장 겸 예술감독 강수진입니다. 제 7회 대한민국장애인국제무용제의 개최를 진심으로 축하드리며 뜻 깊은 무 용제의 개최를 위해 애써주신 모든 무용예술인 여러분께
+                    깊은 감사의 인사를 드립니다.
+                  </p>
+                  <p>
+                    다양한 작품들로 무용제를 준비한 안무가와 무용수들에게 따뜻한 응원과 박수 부탁드리며, 앞으로도 대한민국장애인국제무용제가 모든 무용예술인들이 마음 껏 창작활동을 펼칠 수 있는 화합과
+                    소통의 장이 되기를 기대합니다.
+                  </p>
+                  <div class="name-txt01">강수진</div>
+                  <div class="job-txt01">국립발레단 단장 겸 예술감독 강수진</div>
+                </div>
+
+                <div class="message-box nomargin">
+                  <p>
+                    모든 사람은 그 자체로 예술작품이라고 생각합니다. 장애인 무용수들은 특별한 아름다움을 가진 최고의 예술 작품입니다.<br />
+                    감동적이고 멋진 공연에 많은 분들이 함께 해주시길 바랍니다. 제 7회 대한민구장애인국제무용제를 진심으로 축하하고 응원합니다!
+                  </p>
+
+                  <div class="name-txt01">김주원</div>
+                  <div class="job-txt01">발레리나</div>
+                </div>
+                <div class="message-box">
+                  <p>
+                    “장애인은 태어나면서부터 예술가였다.” <br />
+                    ㅡ 미국 무용가 엘리스 셰퍼드<br />
+                  </p>
+                  <p>
+                    장애인 무용수들이 가지고 있는 그대로를 표현하는 그 자체가 이미 의미가 있고 기존의 무용에서 볼 수 없는 전혀 새로운 것. 장애인과 비장애인의 경계를 허무는 대한민국의 자랑스러운
+                    무용축제 KIADA 2022를 응원합니다.
+                  </p>
+                  <div class="name-txt01">김성용</div>
+                  <div class="job-txt01">대구시립 무용단 예술감독</div>
+                </div>
+                <div class="message-box nomargin">
+                  <p>제7회 대한민국장애인국제무용제 개최를 축하드립니다. 작년 제6회 대한민국장애인국제무용제에서 프로젝트 이인과 함께 <무용수 되기> 라는 작품으 로 공연을 올린바 있습니다.</p>
+                  <p>
+                    그때 만들었던 공연이 그간 발전을 거쳐서 현재 독일에서 열리고 있는 무용 축제에 공연을 하러 왔고 독일에서 촬영을 진행하고 있습니다. 저희가 대한민국장애인국제무용제를 통해서 만났던
+                    좋은 관객들, 비평들, 다른 무용수들과의 만남을 통해 많은 것을 배우고 발전할 수 있었습니다.<br />
+                    이번 제7회 대한민국장애인국제무용제를 통해 참여하는 여러 나라의 무용수분들이 좋은 관객들을 더 많이 만나고 멋진 창작 작품으로 확장될 수 있기를 바라겠습니다. 참여한 모든 창작자와
+                    공연팀을 응원하겠습니다. 감사합니다.
+                  </p>
+
+                  <div class="name-txt01">김원영</div>
+                  <div class="job-txt01">변호사, 장애인 무용가</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- support -->
         <div class="kiada-support">
           <div class="support-wrap">
@@ -311,10 +673,10 @@
                   <img src="images/logo-organizer.svg" />
                 </a>
               </li>
-              <li>
+              <li class="dummy">
                 <img src="images/sec03_dummy.png" />
               </li>
-              <li>
+              <li class="dummy">
                 <img src="images/sec03_dummy.png" />
               </li>
             </ul>
@@ -345,3 +707,21 @@
     </div>
   </body>
 </html>
+<script>
+  function addOver(id) {
+    if ($("#" + id).hasClass("over")) {
+      $("#" + id).removeClass("over");
+    } else {
+      $("#" + id).addClass("over");
+    }
+  }
+  $(".open_btn").click(function () {
+    if ($(".mobile-gnb").hasClass("hide")) {
+      $(".mobile-gnb").removeClass("hide");
+      $(".mobile-bg").removeClass("hide");
+    } else {
+      $(".mobile-gnb").addClass("hide");
+      $(".mobile-bg").addClass("hide");
+    }
+  });
+</script>
