@@ -1,0 +1,22 @@
+@media (max-width: 1820px) {
+  .introImg02 {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1300px) {
+  .introImg03 {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+@media (max-width: 780px) {
+  .intro-top {
+    padding-left: 5%;
+  }
+  .introImg01 {
+    margin-top: 30px;
+  }
+  .introImg03 {
+    margin-top: 40px;
+  }
+}

@@ -292,8 +292,11 @@
     width: 100%;
     height: 100%;
   }
+  .video-bg {
+    padding: 2% 4% 7%;
+  }
 }
-@media (max-width: 900px) {
+@media (max-width: 786px) {
   .content {
     margin-top: 20%;
   }
@@ -415,12 +418,13 @@
   .sns img:first-child {
     margin-left: 0px;
   }
-}
-@media (max-width: 750px) {
   .main-visual {
     display: none;
   }
   .mo-main {
     display: block;
   }
+}
+
+@media (max-width: 750px) {
 }

@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
+    <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/sub01.css" />
+    <link rel="stylesheet" href="../css/sub02.css" />
+    <link rel="stylesheet" href="../css/sub02-02.css" />
+    <link rel="stylesheet" href="../css/subResponsive.css" />
+    <!-- jquery -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!-- rellax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>KIADA</title>
+  </head>
+  <body>
+    <div id="wrap" style="overflow: unset">
+      <div class="mobile-header">
+        <div class="header-center">
+          <a href="javascript:void(0)" class="logo">
+            <img src="../images/Logo-m.png" />
+          </a>
+          <span class="open_btn">
+            <img src="../images/mobile menu.png" />
+          </span>
+          <div class="mobile-gnb_wrap">
+            <div class="mobile-gnb hide">
+              <ul class="dep1">
+                <li id="about" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li id="show" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 공연프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">해외작</a></li>
+                    <li><a href="#">국내작</a></li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li id="show2" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 부대프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">댄스워크숍</a></li>
+                    <li><a href="#">국제학술심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li id="kiadas" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li id="news" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li id="history" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">HISTROY</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li id="contact" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="mobile-bg hide"></div>
+            </div>
+            <!-- //mobile-gnb -->
+          </div>
+          <!-- // mobile-gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </div>
+      <header class="header">
+        <div class="header-center">
+          <div class="gnb_wrap">
+            <div class="gnb">
+              <ul class="dep1">
+                <li>
+                  <a href="javascript:void(0)" class="logo">
+                    <img src="../images/logo-kiada2020-green.svg" class="logo-g" />
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2">
+                    <li><a href="#">축제소개</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">
+                    KIADA2022<br />
+                    공연
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">참여작 소개</a></li>
+                    <li><a href="#">해외 초청작</a></li>
+                    <li>
+                      <a href="#">국내 기획 및 공모 선정작</a>
+                    </li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">
+                    KIADA2022<br />
+                    프로그램
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">워크숍</a></li>
+                    <li><a href="#">심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">아카이브</a>
+                  <ul class="dep2">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+            <!-- //gnb -->
+          </div>
+          <!-- // gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </header>
+      <div class="sub01">
+        <nav class="stickyNav">
+          <ul class="nav-ul">
+            <li><a href="#">공연개요</a></li>
+            <li><a href="#">해외작</a></li>
+            <li><a href="#">국내작</a></li>
+            <li class="nav-active"><a href="#">티켓예매</a></li>
+          </ul>
+        </nav>
+        <section class="overseas">
+          <div class="overseas-wrap">
+            <div class="overseas-main_title">KIADA2022 국내기획작</div>
+            <div class="overseas-program-wrap">
+              <div class="country">
+                <span><img src="../sub/kr.png" />Korea</span>
+                <span>* 개막작</span>
+              </div>
+              <div class="program_title">
+                <p class="p-txt01">접는 법</p>
+                <p class="p-txt02">HOW TO FOLD</p>
+              </div>
+              <img src="../sub/sub02-02-01.jpg" class="p-img" />
+              <div class="program-text_wrap">
+                <div class="program-text_wrap-01">
+                  <p class="txt16">시놉시스 Synopsis</p>
+                  <p>
+                    학창시절 학을 접는 방법을 배웠다.<br />
+                    종이로 학을 접어내는 일은 나에게 쉽지 않은 일이었다. <br />
+                    그래서 나는 학종이 접기를 그만 접어내기 로 했다. <br />
+                    내가 할 수 있는 것이라곤 종이를 구기는 일밖에는 없었다.<br />
+                    나는 말하려 한다.<br /><br />
+
+                    “결국, 구겨진 나의 종이는 학보다 더 멀리 날아갈 수 있다는 것을”
+                  </p>
+                </div>
+                <div class="program-text_wrap-01">
+                  <p class="txt16">단체소개 Team Info</p>
+                  <p class="bold txt40">온몸컴퍼니</p>
+                  <p>
+                    온몸컴퍼니는 2006년에 탄생한 전문 예술 단체로서 퍼포먼스, 무용, 영화 등 어느 장르를 가리지 않고, 몸을 통해 관객과 소통하고자 하는 목표점을 가지고 활동하고 있다. 국내의 여러
+                    페스티벌에 서의 공연은 물론, 국제교류를 통해 워크숍 및 공연을 하고 있기도 하다. 2013년에는 한국-대만 국 제교류 기획공연을 주최한 바 있다.
+                  </p>
+                </div>
+                <div class="cast-wrap">
+                  <div class="cast-box">
+                    <div class="castPositon">안무</div>
+                    <div class="castName">강성국 (뇌병변장애)</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">출연</div>
+                    <div class="castName">강성국 (뇌병변장애)</div>
+                    <div class="castName">김성연</div>
+                    <div class="castName">조주혜</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">음악</div>
+                    <div class="castName">Cakeday</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">무대미술</div>
+                    <div class="castName">Stephanie Rachel Kincade</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overseas-program-wrap">
+              <div class="country">
+                <span><img src="../sub/kr.png" />Korea</span>
+              </div>
+              <div class="program_title">
+                <p class="p-txt01">펑크 메신저</p>
+                <p class="p-txt02">Funk Messenger</p>
+              </div>
+              <img src="../sub/sub02-02-02.jpg" class="p-img" />
+              <div class="program-text_wrap">
+                <div class="program-text_wrap-01">
+                  <p class="txt16">시놉시스 Synopsis</p>
+                  <p>
+                    내면의 진정한 감정을 비판하고 숨기기 바쁜 현대 사회의 모순적인 어른들의 모습과<br />
+                    진솔하고 자유로운 아이들의 모습을 비교하며 작품을 선보일 예정이다. <br />
+                    신체 각 부분을 활용한 다양한 몸짓을 통해 대화의 주제가 시작이 되고 <br />
+                    개성이 다른 아이들의 춤과 움직임을 공유하면서, <br />
+                    잊고 있었던 감정의 부재와 내면의 표현력을 찾고 움직임도 더욱 확장된다. <br />
+                    잃어버린 자신의 감정, 표현, 진솔함을 찾은 어른과 아이들의 컨텍 움직임으로 표현하고자 한다.
+                  </p>
+                </div>
+                <div class="program-text_wrap-01">
+                  <p class="txt16">단체소개 Team Info</p>
+                  <p class="bold txt40">AFTERGLOW</p>
+                  <p>
+                    안무가이자 스트릿 댄서인 조창빈(SABURO)을 주축으로 팀원 김진원과 정태수 총 세 명으로 구성된 애프터글로우(afterglow)는 스트릿 댄스를 기반으로 국내외 퍼포먼스, 배틀 등 각종 공연을
+                    기획하 며 활동하고 있는 예술단체이다. 움직임의 제한이 없는 자유로운 신체 표현을 통한 관객들과의 꾸 준한 소통으로 사람들의 마음을 움직이는 예술을 지향하고 있다.
+                  </p>
+                </div>
+                <div class="cast-wrap">
+                  <div class="cast-box">
+                    <div class="castPositon">안무</div>
+                    <div class="castName">조창빈</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">출연</div>
+                    <div class="castName">김종현 (발달장애)</div>
+                    <div class="castName">김진원</div>
+                    <div class="castName">나세림 (발달장애)</div>
+                    <div class="castName">정태수</div>
+                    <div class="castName">조창빈</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overseas-program-wrap">
+              <div class="country">
+                <span><img src="../sub/kr.png" />Korea</span>
+                <span>* 폐막작</span>
+              </div>
+              <div class="program_title">
+                <p class="p-txt01">우리가 원하는</p>
+                <p class="p-txt02">We wish</p>
+              </div>
+              <img src="../sub/sub02-02-03.jpg" class="p-img" />
+              <div class="program-text_wrap">
+                <div class="program-text_wrap-01">
+                  <p class="txt16">시놉시스 Synopsis</p>
+                  <p>
+                    갑자기 내리는 비. <br />
+                    누군가 내미는 우산에 비를 피해본다. <br />
+                    보이지 않는 길 끝에 벽이 있다. <br />
+                    더듬거리며 길을 찾아간다. <br />
+                    내가 벽을 찾은 것인지 벽이 나를 찾아 주는 것인지... <br />
+                    마법처럼 이루어지는 우리의 바람은 누군가의 관심이다.
+                  </p>
+                </div>
+                <div class="program-text_wrap-01">
+                  <p class="txt16">단체소개 Team Info</p>
+                  <p class="bold txt40">W2 PROJECT</p>
+                  <p>
+                    W2 Project는 KIADA2022 참가를 위해 구성된 팀이다. 안무자 유선식과 조안무 및 출연자 황민지를 중심으로 각각 다른 유형의 장애를 가진 다섯 명의 무용수가 참여한다. W2는 작품명 [We
+                    Wish]의 줄임으로 작품이 의미하는 ‘우리 모두가 서로를 이해하고 배려 할 수 있음’을 뜻한다.
+                  </p>
+                </div>
+                <div class="cast-wrap">
+                  <div class="cast-box">
+                    <div class="castPositon">안무</div>
+                    <div class="castName">유선식</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">조안무</div>
+                    <div class="castName">황민지</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">출연</div>
+                    <div class="castName">김우진 (뇌병변장애)</div>
+                    <div class="castName">김정훈 (지체장애)</div>
+                    <div class="castName">이은성 (지적장애)</div>
+                    <div class="castName">장해나 (시각장애)</div>
+                    <div class="castName">전정아 (뇌병변장애)</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon"></div>
+
+                    <div class="castName">황민지</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">소품</div>
+                    <div class="castName">이경표</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">음악</div>
+                    <div class="castName">이동향</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overseas-program-wrap">
+              <div class="country">
+                <span><img src="../sub/kr.png" />Korea</span>
+              </div>
+              <div class="program_title">
+                <p class="p-txt01">펑크 메신저</p>
+                <p class="p-txt02">Funk Messenger</p>
+              </div>
+              <img src="../sub/sub02-02-02.jpg" class="p-img" />
+              <div class="program-text_wrap">
+                <div class="program-text_wrap-01">
+                  <p class="txt16">시놉시스 Synopsis</p>
+                  <p>
+                    내면의 진정한 감정을 비판하고 숨기기 바쁜 현대 사회의 모순적인 어른들의 모습과<br />
+                    진솔하고 자유로운 아이들의 모습을 비교하며 작품을 선보일 예정이다. <br />
+                    신체 각 부분을 활용한 다양한 몸짓을 통해 대화의 주제가 시작이 되고 <br />
+                    개성이 다른 아이들의 춤과 움직임을 공유하면서, <br />
+                    잊고 있었던 감정의 부재와 내면의 표현력을 찾고 움직임도 더욱 확장된다. <br />
+                    잃어버린 자신의 감정, 표현, 진솔함을 찾은 어른과 아이들의 컨텍 움직임으로 표현하고자 한다.
+                  </p>
+                </div>
+                <div class="program-text_wrap-01">
+                  <p class="txt16">단체소개 Team Info</p>
+                  <p class="bold txt40">AFTERGLOW</p>
+                  <p>
+                    안무가이자 스트릿 댄서인 조창빈(SABURO)을 주축으로 팀원 김진원과 정태수 총 세 명으로 구성된 애프터글로우(afterglow)는 스트릿 댄스를 기반으로 국내외 퍼포먼스, 배틀 등 각종 공연을
+                    기획하 며 활동하고 있는 예술단체이다. 움직임의 제한이 없는 자유로운 신체 표현을 통한 관객들과의 꾸 준한 소통으로 사람들의 마음을 움직이는 예술을 지향하고 있다.
+                  </p>
+                </div>
+                <div class="cast-wrap">
+                  <div class="cast-box">
+                    <div class="castPositon">안무</div>
+                    <div class="castName">조창빈</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">출연</div>
+                    <div class="castName">김종현 (발달장애)</div>
+                    <div class="castName">김진원</div>
+                    <div class="castName">나세림 (발달장애)</div>
+                    <div class="castName">정태수</div>
+                    <div class="castName">조창빈</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overseas-main_title">KIADA2022 국내공모작</div>
+            <div class="overseas-program-wrap">
+              <div class="country">
+                <span><img src="../sub/kr.png" />Korea</span>
+              </div>
+              <div class="program_title">
+                <p class="p-txt01">끝...시작을 부르다3</p>
+                <p class="p-txt02">THE END...CALL THE BEGINNING 3</p>
+              </div>
+              <img src="../sub/sub02-02-04.jpg" class="p-img" />
+              <div class="program-text_wrap">
+                <div class="program-text_wrap-01">
+                  <p class="txt16">시놉시스 Synopsis</p>
+                  <p>
+                    “나비는 난다..<br />
+                    두 팔이 날개가 되어 나비처럼 난다..”<br /><br />
+
+                    “사물을 보는 나도, 보지 못하는 너도.. <br />
+                    우리는 모두 날지 못한다..<br />
+                    하지만 훨훨 날아서 어디든 갈 수 있기를 희망한다.”<br /><br />
+
+                    양 팔이 날개가 되어 팔을 위아래로 흔들 때 마다.. <br />
+                    너와 나, 우리 모두는<br />
+                    세상을 향해,<br />
+                    내가 꿈꾸는 곳을 향해 날아오르기 시작한다.<br /><br />
+
+                    끝이라 생각했던 절망의 시간도..<br />
+                    다시 생각해 보면..<br />
+                    포기하지만 않는다면...<br />
+                    그 끝은 끝이 아니라 새로운 시작일 수 있다.
+                  </p>
+                </div>
+                <div class="program-text_wrap-01">
+                  <p class="txt16">단체소개 Team Info</p>
+                  <p class="bold txt40">룩스빛 아트컴퍼니</p>
+                  <p>
+                    룩스빛 아트컴퍼니는 2013년 LUX-빛 무용단 설립을 시작으로, 한국의 전통무용 및 발레를 기반으로 하는 비장애인과 시각장애인이 함께 어우러진 창작무용예술과 공연을 실시해 오면서
+                    창작무용교육사업의 초석을 다져왔습니다. 우리는 이러한 경험을 발판으로 창작무용 보급 및 교육사업을 추진하여 무용 창작진흥 및 대중화에 기여함은 물론, 사회공헌에 적극 동참하고, 한발
+                    더 나아가 한국문화예술에 기여하고자 비영리 사단법인으로 재설립하여 새롭게 도약하고 있습니다.
+                  </p>
+                </div>
+                <div class="cast-wrap">
+                  <div class="cast-box">
+                    <div class="castPositon">안무</div>
+                    <div class="castName">김자형</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">출연</div>
+                    <div class="castName">권기혜 (시각장애)</div>
+                    <div class="castName">권정순</div>
+                    <div class="castName">김미희</div>
+                    <div class="castName">송미정</div>
+                    <div class="castName">유진 (시각장애)</div>
+                    <div class="castName">이주아</div>
+                    <div class="castName">이추옥 (시각장애)</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon"></div>
+                    <div class="castName">정주경</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overseas-program-wrap">
+              <div class="country">
+                <span><img src="../sub/kr.png" />Korea</span>
+              </div>
+              <div class="program_title">
+                <p class="p-txt01">가능한 춤 2022</p>
+                <p class="p-txt02">POSSIBLE DANCE 2022</p>
+              </div>
+              <img src="../sub/sub02-02-05.jpg" class="p-img" />
+              <div class="program-text_wrap">
+                <div class="program-text_wrap-01">
+                  <p class="txt16">시놉시스 Synopsis</p>
+                  <p>
+                    ‘가능한 춤 2022’는 2022년 현재, 우리의 움직임은 어디만큼 왔을까? <br />
+                    어디까지 움직일 수 있으면 우리가 표 현하고자 하는 것을 움직일 수 있을까? 라는 질문을 가지고 <br />
+                    우리가 어떻게 움직이고 춤출 수 있는지의 가능성 을 확인하는 작품이다. <br />
+                    가능한 춤 시리즈는 매년, 매회, 장소의 특성에 따라 진화하고 있다.<br />
+                  </p>
+                </div>
+                <div class="program-text_wrap-01">
+                  <p class="txt16">단체소개 Team Info</p>
+                  <p class="bold txt40">홍댄스컴퍼니X춤추는 은평재활원</p>
+                  <p>
+                    홍댄스컴퍼니×춤추는 은평재활원은 홍댄스컴퍼니와 은평재활원 춤꾼들이 모여 만든 홍댄스컴퍼니의 장애인 전문무용단체이다. 홍댄스컴퍼니는 무용에 대한 사회 전반의 인식을 재고하고
+                    무용인구 저변 확대를 목적으로 연극적 상상력과 컨템포러리 춤을 결합, 나이와 셩별에 관계없이 즐기는 유쾌한 작품을 창작, 공연하고 있다. 또한 다양한 세대 및 장애인과 비장애인 모두 춤을
+                    통해 창의적이고 행복한 삶이 가능하도록 문화예술교육 및 커뮤니티 댄스 활동을 진행하고 있다.
+                  </p>
+                </div>
+                <div class="cast-wrap">
+                  <div class="cast-box">
+                    <div class="castPositon">안무</div>
+                    <div class="castName">홍혜전</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">출연</div>
+                    <div class="castName">강봉두 (지적장애)</div>
+                    <div class="castName">김민수 (지적장애)</div>
+                    <div class="castName">김조영 (지적장애)</div>
+                    <div class="castName">김창경 (지적장애)</div>
+                    <div class="castName">박상현 (지적장애)</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon"></div>
+                    <div class="castName">유영천 (지적장애)</div>
+                    <div class="castName">이경렬 (지적장애)</div>
+                    <div class="castName">장한나 (지적장애)</div>
+                    <div class="castName">조봉석 (지적장애)</div>
+                    <div class="castName">조용덕 (지적장애)</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">음악감독 및 연주</div>
+                    <div class="castName">타무라 료</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">연주</div>
+                    <div class="castName">농담(고현경)</div>
+                    <div class="castName">옴브레(김헌기)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overseas-program-wrap">
+              <div class="country">
+                <span><img src="../sub/kr.png" />Korea</span>
+              </div>
+              <div class="program_title">
+                <p class="p-txt01">약속; 관계하다</p>
+                <p class="p-txt02">AGREEMENT</p>
+              </div>
+              <img src="../sub/sub02-02-06.jpg" class="p-img" />
+              <div class="program-text_wrap">
+                <div class="program-text_wrap-01">
+                  <p class="txt16">시놉시스 Synopsis</p>
+                  <p>
+                    다양한 약속으로 실험했던 움직임 탐구를 극적 구성없이 4개의 장으로 구성, <br />
+                    서로간의 보이지 않는 약속으로 만들어지는 유대와 <br />
+                    규격화되지 않은 움직임은 놀이와 신체접중, 정서적 공감들로 표현된 다.<br /><br />
+
+                    작품구성:<br />
+                    -1장&lt;Reaction&gt;몸짓을 소리로, 소리를 몸짓으로 반응하고 놀이를 하듯 상대에게 집중하며 다양한 움직임을 만들어 표현한다<br />
+                    -2장&lt;안부를 묻다&gt;서로를 무심히 스쳐가는 무미건조한 동선과 움직임 속에서 자신과 서로의 요구를 알아차리고 짧지만 강력한 안부를 묻는다.<br />
+                    -3장&lt;Listen&gt;마음에 담아 놓은 자신의 이야기를 움직임으로 표현함으로써 서로를 이해하는 춤이 된 다.<br />
+                    -4장&lt;따로, 함께&gt;서로의 약속 안에서 자유로운 움직임을 만든다.<br />
+                  </p>
+                </div>
+                <div class="program-text_wrap-01">
+                  <p class="txt16">단체소개 Team Info</p>
+                  <p class="bold txt40">무브먼트프로젝트-도로시</p>
+                  <p>
+                    Movement Project-도로시는 6명의 발달장애예술인과 부산에서 왕성하게 예술활동을 하고 있는 4명 의 전문무용수로 구성된 단체입니다. 본 단체는 2019부터 2021년까지 전국 4지역에 집중
+                    지원한 문 화체육관광부 <장애인예술지원사업>에 선정된 부산문화재단의 지원을 받아 3년간 교육, 활동하고 공연한 단체입니다. 일반화 되어 있는 장애인 예술활동의 동아리활동과 같은 형태를
+                    벗어나 보다 전문성을 뛴 예술활동으로 이어 갈수 있는 방법을 찾아가고 있습니다. 발달장애인 단원들의 장애특 성으로 소통과 이해의 기다림이 단원과 단원사이 단원과 안무가 사이에서
+                    필요합니다. 이러한 과정 은 어려움이 아니라 오히려 저희 무용단이 만들어가는 예술적지향점으로 삼고 차별화된 작품을 만 들어 나가려고 노력하고 있습니다.
+                  </p>
+                </div>
+                <div class="cast-wrap">
+                  <div class="cast-box">
+                    <div class="castPositon">안무</div>
+                    <div class="castName">박은지</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">조안무</div>
+                    <div class="castName">엄효빈</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">연출</div>
+                    <div class="castName">허경미</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">출연</div>
+                    <div class="castName">김유진 (지적장애)</div>
+                    <div class="castName">박은지</div>
+                    <div class="castName">엄효빈</div>
+                    <div class="castName">이은애 (지적장애)</div>
+                    <div class="castName">이지연 (지적장애)</div>
+                    <div class="castName">정승환</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon"></div>
+
+                    <div class="castName">정민수 (지적장애)</div>
+                    <div class="castName">한민기 (자폐성장애)</div>
+                    <div class="castName">허경미</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">음향<br />오퍼레이터</div>
+                    <div class="castName">문건호</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overseas-program-wrap">
+              <div class="country">
+                <span><img src="../sub/kr.png" />Korea</span>
+              </div>
+              <div class="program_title">
+                <p class="p-txt01">세 사람의 이야기</p>
+                <p class="p-txt02">TRialogue</p>
+              </div>
+              <img src="../sub/sub02-02-07.jpg" class="p-img" />
+              <div class="program-text_wrap">
+                <div class="program-text_wrap-01">
+                  <p class="txt16">시놉시스 Synopsis</p>
+                  <p>
+                    발레리나 백지윤, 배우 김범진, 비보이 김완혁.<br />
+                    장애를 극복하고 춤을 추는 세사람의 이야기.<br />
+                    자신의 한계를 온전히 포용하며 춤의 가능성을 믿었던 <br />
+                    그들의 값진 도전을 무대 위에 담는다.<br />
+                    세상이 두껍게 쌓아 올린 편견의 벽과 부딪히며 <br />
+                    정신적, 신체적 한계를 넘어서는 그 의지로 <br />
+                    자신만의 삶의 의미를 발견해온 세 명의 춤 인생.<br />
+                    이들은 오늘도 춤을 통해 자기 극복의 힘으로 <br />
+                    오롯이 아름답게 존재한다.
+                  </p>
+                </div>
+                <div class="program-text_wrap-01">
+                  <p class="txt16">단체소개 Team Info</p>
+                  <p class="bold txt40">블랙토</p>
+                  <p>
+                    검은 발레슈즈를 뜻하는 이루다의 'Black Toe'는 2010년 뉴욕 덤보에서 데뷔작 'Black Bolero' 를 시 작으로 크리틱스초이스 우수상 수상, 독일 탄츠테아터 국제안무대회에서 3등상을
+                    수상하였고 여성 을 주제로한 W라는 작품이 호평을 받으며 한국춤평론가회 작품상을 수상하였다. 최근에는 환경문 제와 인류 멸망을 표현한 &lt;DYSTOPIA&gt; 신작을 선보이며 동시대
+                    사회문제를 주제로 시리즈 작업을 이어오고 있다. 지속적으로 새로운 창작발레의 대중성을 지향하며 다양한 분야와 콜라보레이션, 온 라인 콘텐츠 개발 등 활동영역을 활발히 넓혀가고 있다.
+                  </p>
+                </div>
+                <div class="cast-wrap">
+                  <div class="cast-box">
+                    <div class="castPositon">안무</div>
+                    <div class="castName">이루다</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">조안무</div>
+                    <div class="castName">이루마</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">연출</div>
+                    <div class="castName">허경미</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">출연</div>
+                    <div class="castName">김완혁 (지체장애)</div>
+                    <div class="castName">김범진 (지체장애)</div>
+                    <div class="castName">노정우</div>
+                    <div class="castName">백지윤 (지체장애)</div>
+                    <div class="castName">이루마</div>
+                    <div class="castName">이우선</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">음악</div>
+                    <div class="castName">이범</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">의상</div>
+                    <div class="castName">임태민</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overseas-program-wrap">
+              <div class="country">
+                <span><img src="../sub/kr.png" />Korea</span>
+              </div>
+              <div class="program_title">
+                <p class="p-txt01">안개</p>
+                <p class="p-txt02">Fog</p>
+              </div>
+              <img src="../sub/sub02-02-08.jpg" class="p-img" />
+              <div class="program-text_wrap">
+                <div class="program-text_wrap-01">
+                  <p class="txt16">시놉시스 Synopsis</p>
+                  <p>
+                    &lt;안개&gt;는 현재, 바로 지금, 과거의 시간을 끊임없이 불러들이는 이야기로 되어 있다.<br />
+                    아주 우연한 만남 속에서, 스쳐 지나간 흔적들, 그리고 기다림, 상상의 공간에서, 일어나는 사건을 통해, 자신을 찾는 이야기이며, <br />
+                    작품에서 그와 그들이 등장한다. 안개를 뚫고 들어간 사람과 뚫고 나온 사람들이 있다. 그와 그들은 만나고, 같이 하나가 되고, <br />
+                    떨어지고 헤어짐을 반복하지만 매 순간 그 곳에 있는 다른 시간을 만들어낸다. 눈에 보이지 않아 더 그리운 것들이 있다. <br />
+                    그 하얀 희망들이 안개를 만들며 그리고 사라지다.
+                  </p>
+                </div>
+                <div class="program-text_wrap-01">
+                  <p class="txt16">단체소개 Team Info</p>
+                  <p class="bold txt40">온앤오프무용단</p>
+                  <p>
+                    온앤오프 무용단은 안무가이자 무용가, 연출가인 ‘한창호’와 ‘도유’가 2001년 창단한 창작예술 공연 예술단체이다. 관객과의 소통, 함께 행복할 수 있는 춤과 움직임, 자유로운 창조를 지향하는
+                    그들의 작품은 인간과 생명, 세상을 향한 질문과 발견, 삶의 희로애락 등으로 가득 차 있다. 무대 위에 펼쳐놓는 진정성 짙은 표현과, ‘가슴으로 춤춘다’라는 그들의 춤은 우리를 더욱더 깊은
+                    감동으로 이끈다.
+                  </p>
+                </div>
+                <div class="cast-wrap">
+                  <div class="cast-box">
+                    <div class="castPositon">안무</div>
+                    <div class="castName">한창호</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">출연</div>
+                    <div class="castName">도유</div>
+                    <div class="castName">박주영 (청각장애)</div>
+                    <div class="castName">조우리 (뇌병변장애)</div>
+                    <div class="castName">정혜원</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">음악</div>
+                    <div class="castName">정제용</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">영상 디자인</div>
+                    <div class="castName">금민정</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">영상 제작</div>
+                    <div class="castName">플랭커</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overseas-program-wrap">
+              <div class="country">
+                <span><img src="../sub/kr.png" />Korea</span>
+              </div>
+              <div class="program_title">
+                <p class="p-txt01">우리가 원하는</p>
+                <p class="p-txt02">We wish</p>
+              </div>
+              <img src="../sub/sub02-02-09.jpg" class="p-img" />
+              <div class="program-text_wrap">
+                <div class="program-text_wrap-01">
+                  <p class="txt16">시놉시스 Synopsis</p>
+                  <p>
+                    갑자기 내리는 비. <br />
+                    누군가 내미는 우산에 비를 피해본다. <br />
+                    보이지 않는 길 끝에 벽이 있다. <br />
+                    더듬거리며 길을 찾아간다. <br />
+                    내가 벽을 찾은 것인지 벽이 나를 찾아 주는 것인지... <br />
+                    마법처럼 이루어지는 우리의 바람은 누군가의 관심이다.
+                  </p>
+                </div>
+                <div class="program-text_wrap-01">
+                  <p class="txt16">단체소개 Team Info</p>
+                  <p class="bold txt40">W2 PROJECT</p>
+                  <p>
+                    W2 Project는 KIADA2022 참가를 위해 구성된 팀이다. 안무자 유선식과 조안무 및 출연자 황민지를 중심으로 각각 다른 유형의 장애를 가진 다섯 명의 무용수가 참여한다. W2는 작품명 [We
+                    Wish]의 줄임으로 작품이 의미하는 ‘우리 모두가 서로를 이해하고 배려 할 수 있음’을 뜻한다.
+                  </p>
+                </div>
+                <div class="cast-wrap">
+                  <div class="cast-box">
+                    <div class="castPositon">안무</div>
+                    <div class="castName">유선식</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">조안무</div>
+                    <div class="castName">황민지</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">출연</div>
+                    <div class="castName">김우진 (뇌병변장애)</div>
+                    <div class="castName">김정훈 (지체장애)</div>
+                    <div class="castName">이은성 (지적장애)</div>
+                    <div class="castName">장해나 (시각장애)</div>
+                    <div class="castName">전정아 (뇌병변장애)</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon"></div>
+                    <div class="castName">황민지</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">소품</div>
+                    <div class="castName">이경표</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">음악</div>
+                    <div class="castName">이동향</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overseas-program-wrap">
+              <div class="country">
+                <span><img src="../sub/kr.png" />Korea</span>
+              </div>
+              <div class="program_title">
+                <p class="p-txt01">기후위기</p>
+                <p class="p-txt02">CLIMATE CRISIS</p>
+              </div>
+              <img src="../sub/sub02-02-09.jpg" class="p-img" />
+              <div class="program-text_wrap">
+                <div class="program-text_wrap-01">
+                  <p class="txt16">시놉시스 Synopsis</p>
+                  <p>
+                    기후위기에 대한 경각심 둔화, 잊혀지는 일각의 외침.<br />
+                    나에게 일어나지 않을 일들이다... <br />
+                    그러나, 무관심으로 일관하는 시간이 흘러 어느 날 비극적인 현상을 맞이한 우리는 피해자이지만, <br />
+                    한편으로 누구에게도 책임을 물을 수 없는 가해자가 되어있다. <br />
+                    그리하여 오롯이 우리가 짊어져야 할 고통을 삼키며 감내할 수 밖에 없는 이 냉정한 현실 속에서 <br />
+                    우리가 한 뜻으로 힘을 합하면 조금은 괜찮아질 수 있는 미래를 그릴 수 있지 않을까 희망을 가져 본다. <br />
+                    우리의 삶, 우리가 살던 평화로운 그 시간으로 돌아가자.<br />
+                    뜨거운 지구의 현상 속 냉정한 현실을 맞게 된 한스러운 모습을 플라멩코로 표현하여 위의 메세지를 전달한다.
+                  </p>
+                </div>
+                <div class="program-text_wrap-01">
+                  <p class="txt16">단체소개 Team Info</p>
+                  <p class="bold txt40">플라멩코 델 솔</p>
+                  <p>
+                    유네스코 무형문화재 지정 스페인의 대표 문화예술인 플라멩코는 음악과 무용이 함께 호흡하며 퍼포먼스를 연출한다. 또한 무용수의 몸짓으로 악기를 연주하듯이 소리를 표현할 수 있는 특색도
+                    갖추었다. 2018년에 설립된 플라멩코 델 솔은 색다른 매력의 플라멩코를 누구나 쉽고, 재미있게 즐길 수 있는 방식을 연구하고, 이에 기반한 교육 및 공연 활동을 하고 있다. 또한, 비장애인과
+                    장애인 무용수들이 함께 어우러져 플라멩코를 즐길 수 있도록 매개체의 역학을 위한 활동도 확장해 나가고 있다.
+                  </p>
+                </div>
+                <div class="cast-wrap">
+                  <div class="cast-box">
+                    <div class="castPositon">안무</div>
+                    <div class="castName">염정민</div>
+                  </div>
+
+                  <div class="cast-box">
+                    <div class="castPositon">출연</div>
+                    <div class="castName">김희량 (시각장애)</div>
+                    <div class="castName">염정민</div>
+                    <div class="castName">허예나</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">연주</div>
+                    <div class="castName">박성진</div>
+                    <div class="castName">설호종</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">영상</div>
+                    <div class="castName">김대원</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">의상</div>
+                    <div class="castName">노은정</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">분장</div>
+                    <div class="castName">김미정</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overseas-program-wrap">
+              <div class="country">
+                <span><img src="../sub/kr.png" />Korea</span>
+              </div>
+              <div class="program_title">
+                <p class="p-txt01">무감어수(無鑒於水)</p>
+                <p class="p-txt02">Mugam-eosu</p>
+              </div>
+              <img src="../sub/sub02-02-10.jpg" class="p-img" />
+              <div class="program-text_wrap">
+                <div class="program-text_wrap-01">
+                  <p class="txt16">시놉시스 Synopsis</p>
+                  <p>
+                    언제, 어디서, 누구에게 모르고 태어난 이름 없는 괴물이 있었다.<br />
+                    이 괴물은 그 생김새가 괴상하고 하는 짓도 추잡하여 사람들이 싫어하고 멀리하였는데, <br />
+                    괴물도 본인 자신도 생김새가 마음에 들지 않아 언젠가부터 이 사람 저 사람 생김새와 행동을 따라 하다가 <br />
+                    결국 자신의 본 모습을 잃어버리고 죽고 마는 슬픈 괴물 이야기이다.
+                  </p>
+                </div>
+                <div class="program-text_wrap-01">
+                  <p class="txt16">단체소개 Team Info</p>
+                  <p class="bold txt40">댄스컴퍼니 미디우스</p>
+                  <p>
+                    댄스컴퍼니 미디우스는 “삶의 참된 가치와 행복을 제시하고, 그것에 수반된 문제의 해결안을 제시 하자”라는 슬로건 아래, 장르를 초월한 손짓과 몸짓으로 대중과 소통하고자 설립되었습니다.
+                    그리 고 이에 따른 수행으로 대중의 삶과 질 향상에 기여함을 목적으로 2005년 설립된 단체입니다.
+                  </p>
+                </div>
+                <div class="cast-wrap">
+                  <div class="cast-box">
+                    <div class="castPositon">안무</div>
+                    <div class="castName">이광석 (청각장애)</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">연출·글</div>
+                    <div class="castName">정순태</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">출연</div>
+                    <div class="castName">김민지</div>
+                    <div class="castName">김온유</div>
+                    <div class="castName">김상경</div>
+                    <div class="castName">김자현</div>
+                    <div class="castName">김지우</div>
+                    <div class="castName">이광석 (청각장애)</div>
+                    <div class="castName">허은찬 (지체장애)</div>
+                  </div>
+
+                  <div class="cast-box">
+                    <div class="castPositon">음악</div>
+                    <div class="castName">엄태훈</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">분장</div>
+                    <div class="castName">최유진</div>
+                  </div>
+                  <div class="cast-box">
+                    <div class="castPositon">의상</div>
+                    <div class="castName">손자경</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

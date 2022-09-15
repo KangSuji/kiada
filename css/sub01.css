@@ -2,8 +2,114 @@
   width: 100%;
   padding: 10px 72px;
   box-sizing: border-box;
+  margin-top: 237px;
 }
-.sub01 nav {
-  width: 311px;
-  height: 272px;
+.sub01 .stickyNav {
+  width: 100%;
+  max-width: 311px;
+  position: fixed;
+}
+.sub01 .stickyNav ul {
+  width: 100%;
+  background-color: #00001c;
+  list-style: none;
+  padding: 0;
+}
+.sub01 .stickyNav ul > li {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.sub01 .stickyNav ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+}
+
+.sub01 .stickyNav ul > li.nav-active > a {
+  color: #68cc58;
+}
+.sub01-content {
+  margin-left: 311px;
+  margin-top: 100px;
+  box-sizing: border-box;
+}
+.notice {
+  width: 100%;
+}
+.board-list {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+}
+.sub01-content table {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-collapse: collapse;
+}
+
+.sub01-content th,
+.sub01-content td {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.sub01-content th:last-child,
+.sub01-content td:last-child {
+  border-right: none;
+}
+.sub01-content a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+/* inner */
+
+.inner-content {
+  margin-left: 311px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  box-sizing: border-box;
+}
+.inner-wrap {
+  width: 100%;
+}
+.inner-wrap table {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+  border-collapse: collapse;
+  color: rgba(255, 255, 255, 0.8);
+}
+.inner-wrap th,
+.inner-wrap td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.inner-wrap th:last-child,
+.inner-wrap td:last-child {
+  border-right: none;
+}
+.inner-wrap a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+.inner-txt {
+  padding: 20px 0;
+}
+.go_list td {
+  border-bottom: none;
+  text-align: end;
+}
+.inner-title td {
+  border-right: none;
+}
+.inner-time {
+  font-size: 14px;
 }

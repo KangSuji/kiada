@@ -192,43 +192,43 @@ body {
   background-repeat: no-repeat;
   margin: 0 auto;
 }
-#simg01 {
-  background-image: url(../images/엇갈린\ 투셀렉크.jpg);
+.simg01 {
+  background-image: url(../images/tosel.jpg);
 }
-#simg02 {
-  background-image: url(../images/룩스빛아트컴퍼니.JPG);
+.simg02 {
+  background-image: url(../images/looks.JPG);
 }
-#simg03 {
-  background-image: url(../images/무브먼트프로젝트도로시.jpg);
+.simg03 {
+  background-image: url(../images/movement.jpg);
 }
-#simg04 {
+.simg04 {
   background-image: url(../images/blackToe.jpg);
 }
-#simg05 {
-  background-image: url(../images/온앤오프무용단.JPG);
+.simg05 {
+  background-image: url(../images/onNoff.JPG);
 }
-#simg06 {
-  background-image: url(../images/플라멩코델솔.jpg);
+.simg06 {
+  background-image: url(../images/plamengo.jpg);
 }
-#simg07 {
-  background-image: url(../images/홍댄스컴퍼니.jpg);
+.simg07 {
+  background-image: url(../images/hongdance.jpg);
 }
-#simg08 {
-  background-image: url(../images/온몸컴퍼니.png);
+.simg08 {
+  background-image: url(../images/onmom.png);
 }
-#simg09 {
+.simg09 {
   background-image: url(../images/W2Project.jpg);
 }
-#simg10 {
+.simg10 {
   background-image: url(../images/afterGlow.png);
 }
-#simg11 {
+.simg11 {
   background-image: url(../images/danzaMobileCompany.jpeg);
 }
-#simg12 {
+.simg12 {
   background-image: url(../images/LegacyCircus.jpeg);
 }
-#simg13 {
+.simg13 {
   background-image: url(../images/verfitoPowerOfValance.jpg);
 }
 
@@ -278,7 +278,6 @@ body {
   font-weight: 400;
   font-size: 29px;
   line-height: 29px;
-  /* identical to box height, or 100% */
   letter-spacing: -0.04em;
   color: #ffffff;
   text-align: start;
@@ -290,14 +289,14 @@ body {
   box-sizing: border-box;
 }
 .kiada-link .link-text {
-  width: 900px;
-  height: 250px;
+  width: 100%;
+  /* height: 250px; */
   padding: 72px 0;
   color: #fff;
 }
 .kiada-link .link-text .link-text-tit {
-  height: 112px;
-  width: 877px;
+  /* height: 112px; */
+  width: 50%;
   font-family: citizen, sans-serif;
   font-size: 56px;
   font-weight: 400;
@@ -306,8 +305,8 @@ body {
   text-align: left;
 }
 .kiada-link .link-text .link-text-txt {
-  height: 84px;
-  width: 808px;
+  /* height: 84px; */
+  width: 50%;
   font-family: Gongan;
   font-size: 30px;
   font-weight: 500;
@@ -345,11 +344,13 @@ body {
   font-size: 56px;
   line-height: 56px;
   color: #fff;
+  text-align: left;
+  padding-left: 195px;
 }
 #vod-1 {
-  background: url("../images/Exclude\(1\).png") 96.7% 64% no-repeat;
-  background-size: 303px;
+  background: url("../images/Exclude\(2\).png") 72px 100% no-repeat;
   padding-left: 72px;
+  text-align: right;
 }
 #vod-2 {
   text-align: right;
@@ -674,7 +675,7 @@ body {
   width: 100%;
   padding: 0 80px;
   margin-top: 312px;
-  margin-bottom: 112px;
+  margin-bottom: 320px;
   box-sizing: border-box;
 }
 .cheer-wrap {
@@ -706,6 +707,13 @@ body {
 
   color: #ffffff;
 }
+.video-bg {
+  width: 100%;
+  background-color: #19194a;
+  padding: 48px 80px 150px;
+  box-sizing: border-box;
+  z-index: -1;
+}
 .cheer-video-wrap {
   position: relative;
   width: 100%;
@@ -714,11 +722,12 @@ body {
 }
 .cheer-video-wrap img {
   width: 100%;
-  z-index: 9999;
+  z-index: 9;
+  overflow: hidden;
 }
 .cheer-video-wrap iframe {
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -727,7 +736,7 @@ body {
 }
 .cheer-video-text {
   position: absolute;
-  bottom: 48px;
+  bottom: -50px;
   left: 80px;
 }
 .name-txt01 {
@@ -747,6 +756,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-grow: 0;
 }
 .message-box {
   width: calc(50% - 20px);
@@ -754,15 +764,99 @@ body {
   box-sizing: border-box;
   font-size: 25px;
   line-height: 133%;
-
-  /* or 33px */
   letter-spacing: -0.04em;
-
   color: #ffffff;
   background-color: #19194a;
   margin-right: 20px;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.m-box1 {
+  margin-top: 360px;
+  max-height: 626px;
+}
+.m-box2 {
+  max-height: 550px;
+}
+.m-box3 {
+  margin-top: 40px;
+  max-height: 560px;
+}
+.m-box4 {
+  margin-top: -360px;
+  max-height: 810px;
 }
 .nomargin {
   margin-right: 0px;
+}
+.flex-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.photo-wrap {
+  width: 100%;
+  position: relative;
+  z-index: 9;
+}
+.photo-wrap img {
+  width: 100%;
+  max-width: 189px;
+  float: right;
+  z-index: 9;
+  margin-top: 60px;
+  filter: drop-shadow(0px 24px 20px rgba(0, 0, 0, 0.25));
+  border-radius: 160px;
+}
+
+.bg-img2 {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.slick-country-wrap {
+  text-align: left;
+}
+.slick-country-wrap span {
+  display: inline-block;
+  width: 164px;
+  height: 76px;
+  text-align: center;
+  line-height: 76px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(11.5px);
+  border-radius: 34px 90px 90px 0px;
+  color: #ffffff;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: -50px;
+}
+.slick-country-wrap span img {
+  vertical-align: middle;
+  width: 40px;
+  display: inline;
+}
+.slide-text {
+  width: 50%;
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  right: 0;
+}
+.slide-text-tit {
+  margin-bottom: 12px;
+}
+.slide,
+.slide-img-wrap,
+.slick-slider,
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+  overflow: unset !important;
 }

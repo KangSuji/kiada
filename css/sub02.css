@@ -1,0 +1,867 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/variable/pretendardvariable.css");
+@import url("https://use.typekit.net/zlu5egj.css");
+/* 키아다 소개페이지 */
+
+.kiada_intro-wrap {
+  width: 100%;
+  box-sizing: border-box;
+}
+.intro-top {
+  width: 100%;
+  padding-left: 311px;
+  box-sizing: border-box;
+}
+.intro-top img {
+  width: 100%;
+}
+.introImg-wrap {
+  width: 100%;
+}
+.introImg-wrap img {
+  display: block;
+  width: 100%;
+}
+.introImg01-wrap {
+  width: 100%;
+}
+.introImg01 {
+  width: 100%;
+  max-width: 1100px;
+  margin-top: -50px;
+  margin-left: auto;
+}
+.introImg02 {
+  width: 100%;
+  max-width: 649.7px;
+  margin-left: -72px;
+  margin-top: -200px;
+}
+.introImg03 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 606.79px;
+  margin-bottom: 110px;
+}
+.subIntor-text {
+  margin-bottom: 110px;
+  color: #ffff;
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 133%;
+
+  /* or 64px */
+  letter-spacing: -0.04em;
+}
+.gradation {
+  background: linear-gradient(to right, #24bb46, #6adbff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.introImg05,
+.introImg06 {
+  width: 100%;
+  max-width: 1465px;
+}
+.introImg05Text,
+.introImg06Text {
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-top: 24px;
+  margin-bottom: 96px;
+  margin-left: 152px;
+}
+@media (max-width: 1300px) {
+  .sub01-content {
+    margin-left: 16%;
+  }
+}
+@media (max-width: 786px) {
+  .wrap {
+    overflow: unset;
+  }
+  .sub01 .stickyNav {
+    max-width: 100%;
+    left: 0;
+    background-color: #000036;
+    position: sticky;
+    top: 0;
+  }
+  .sub01 .stickyNav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    white-space: nowrap;
+  }
+  .sub01-content {
+    margin-left: 0;
+    margin-top: 50px;
+    box-sizing: border-box;
+  }
+  .board-list tr:first-child {
+    display: none;
+  }
+  .num {
+    display: none;
+  }
+  td {
+    border-right: none;
+    padding: 30px 20px;
+  }
+  .date {
+    padding: 0;
+    white-space: nowrap;
+    padding: 0px 10px 20px;
+    vertical-align: bottom;
+  }
+  .sub01 .stickyNav ul > li {
+    padding: 0px;
+  }
+}
+/* 공연개요 */
+.perfo-intro {
+  width: 100%;
+}
+.perfo-top {
+  width: 100%;
+  max-width: 1448px;
+  background: #68cc58;
+  margin-left: auto;
+  border-radius: 10px;
+}
+.perfo-title {
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 133%;
+  letter-spacing: -0.04em;
+  color: #000036;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.perfo-info-wrap {
+  display: flex;
+  padding: 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.perfo-right {
+  margin-top: auto;
+}
+.perfo-left {
+  width: 60%;
+  text-align: left;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #000036;
+}
+.kiada-poster {
+  width: 100%;
+  max-width: 460px;
+  vertical-align: bottom;
+}
+.bold {
+  font-weight: bold;
+}
+.perfo-bottom {
+  width: 100%;
+  max-width: 1448px;
+  background: #68cc58;
+  margin-left: auto;
+  border-radius: 10px;
+  margin-top: 24px;
+  margin-bottom: 320px;
+}
+.perfo-title-sub {
+  color: #000036;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.perfo-title-sub span:first-child {
+  display: inline-block;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #000036;
+  vertical-align: middle;
+  margin-right: 24px;
+}
+.perfo-title-sub span:nth-child(2) {
+  display: inline-block;
+  width: 141px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  color: #fff;
+  border-radius: 48px;
+  vertical-align: middle;
+}
+.perfo-title-sub span:nth-child(2) img {
+  vertical-align: middle;
+}
+.perfo-timeTable-wrap {
+  width: 100%;
+  display: flex;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.perfo-timeTable-box {
+  width: 345.25px;
+  height: 1485px;
+  border-radius: 56px 56px 0px 0px;
+  background: #ffffff;
+  margin-right: 1px;
+}
+.perfo-timeTable-box:last-child {
+  margin-right: 0px;
+}
+.box-head {
+  border-radius: 56px 56px 0px 0px;
+  width: 345.25px;
+  height: 60px;
+  background: #b8f5a8;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  line-height: 60px;
+  color: #000036;
+}
+.box-info {
+  height: 72px;
+  padding: 15px 0;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #000036;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.box-info p {
+  margin: 0;
+}
+.box-frame {
+  width: 100%;
+  height: 100%;
+  padding: 0px 20px 20px;
+  box-sizing: border-box;
+}
+.frame {
+  width: 100%;
+  height: 100%;
+  background-image: url(../sub/Frame01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.frame-inner01 {
+  width: 40px;
+  height: 22px;
+  background: #000036;
+  border-radius: 4px;
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 200%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+.frame-inner02 {
+  font-family: citizen, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  color: #54c3f1;
+  margin-bottom: 4px;
+}
+.frame-inner03 {
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  color: #54c3f1;
+  margin-bottom: 12px;
+}
+.frame-inner04 {
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 147%;
+  letter-spacing: -0.6px;
+  color: #000036;
+}
+.frame-inner05 {
+  font-family: "Pretendard Variable";
+  font-size: 14px;
+  line-height: 147%;
+  letter-spacing: -0.6px;
+  color: #000036;
+  margin-bottom: 16px;
+}
+.frame-inner06 {
+  font-family: "Pretendard Variable";
+  font-size: 14px;
+  line-height: 147%;
+  letter-spacing: -0.6px;
+  color: rgba(0, 0, 54, 0.5);
+  border-top: 1px solid rgba(0, 0, 54, 0.5);
+  margin-bottom: 16px;
+}
+.frame-inner07 {
+  width: 56px;
+}
+.frame-inner07 img {
+  width: 100%;
+}
+.frame2 {
+  width: 100%;
+  height: 326px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.frame2.pink-frame {
+  background-image: url(../sub/Frame4.png);
+}
+.frame2.green-frame {
+  background-image: url(../sub/Frame2.png);
+}
+
+.frame2.sky-frame {
+  background-image: url(../sub/Frame3.png);
+}
+.pink {
+  color: #ee87b4;
+}
+.green {
+  color: #30a34a;
+}
+.frame3 {
+  width: 100%;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.frame3.green-frame {
+  background-image: url(../sub/Frame5.png);
+}
+.frame3.sky-frame {
+  background-image: url(../sub/Frame6.png);
+}
+
+.frame3.pink-frame {
+  background-image: url(../sub/Frame7.png);
+}
+/* 부대프로그램 개요 */
+.program-intro {
+  width: 100%;
+}
+.program-top {
+  width: 100%;
+  max-width: 1448px;
+  margin-left: auto;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.orange {
+  background: #ff7d21;
+}
+.program-title {
+  width: 100%;
+  max-width: 1448px;
+  margin-left: auto;
+  margin-bottom: 40px;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 133%;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+.program-top-title {
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 133%;
+  letter-spacing: -0.04em;
+  color: #000036;
+  padding: 96px 65px;
+  box-sizing: border-box;
+}
+.program-info-wrap {
+  display: flex;
+  padding: 0 40px 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.program-right {
+  width: 60%;
+}
+.program-right p,
+.program-right li {
+  font-family: "Pretendard Variable";
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #000036;
+  margin: 0;
+}
+.program-right p.bold,
+.program-right li .bold {
+  font-size: 24px;
+}
+.program-left {
+  width: 40%;
+}
+.program-left img {
+  width: 100%;
+  max-width: 521px;
+  vertical-align: top;
+  float: left;
+  margin-top: -10px;
+}
+.margin-bottom-40 {
+  display: block;
+  margin-bottom: 40px;
+}
+.gray {
+  background: #c9c7c2;
+}
+.bg-green {
+  background: #30a34a;
+}
+p.yellow {
+  color: #fff100;
+}
+.white {
+  color: #fff;
+}
+/* 키아다즈 소개 */
+.kiadas {
+  width: 100%;
+}
+
+.kiadas-top-text {
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 137px;
+  line-height: 133%;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-bottom: 65px;
+}
+.kiadas-text {
+  width: 100%;
+  padding-left: 320px;
+  box-sizing: border-box;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 133%;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  padding-bottom: 110px;
+}
+.border-bottom {
+  padding-bottom: 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.border-top {
+  padding-top: 100px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.part-title {
+  padding-top: 80px;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 133%;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+.partSec01 {
+  width: 100%;
+  display: flex;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.partNav {
+  width: 270px;
+}
+.partNav span {
+  display: inline-block;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+.partNav span::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+.partImg-wrap {
+  width: 100%;
+}
+.partImg1 {
+  width: 100%;
+  max-width: 724px;
+}
+.partImg2 {
+  width: 100%;
+  max-width: 427px;
+}
+.partText {
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-top: 24px;
+}
+.partImg3 {
+  width: 50%;
+  max-width: 603px;
+}
+.partImg4 {
+  width: 50%;
+  max-width: 549px;
+}
+/* 인사말 */
+
+.hello-wrap {
+  padding: 112px 155px 150px 311px;
+  box-sizing: border-box;
+}
+.helloSec {
+  width: 100%;
+  margin-bottom: 220px;
+}
+.hello-title {
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 133%;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.hello-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hello-left {
+  width: 50%;
+  margin-right: 70px;
+}
+.hello-left:last-child {
+  margin-right: 0px;
+  text-align: end;
+}
+.hello-left img {
+  width: 100%;
+  max-width: 595px;
+}
+
+.hello-right {
+  width: 50%;
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+
+.hello-right img {
+  width: 100%;
+  max-width: 595px;
+  float: right;
+}
+.hellotxt {
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+}
+.helloLine::before {
+  display: block;
+  content: "";
+  width: 125px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 15px;
+}
+.marginNone {
+  margin: 0;
+}
+/* 조직도 */
+.zozic {
+  width: 100%;
+}
+.zozic-wrap {
+  padding: 112px 0px 150px 311px;
+  box-sizing: border-box;
+}
+.zozic-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Pretendard Variable";
+  font-size: 32px;
+  line-height: 150%;
+  box-sizing: border-box;
+}
+.boss-box {
+  width: 100%;
+  padding: 50px;
+}
+.zozic-line1 {
+  width: 1px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+}
+.worker-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.worker-box {
+  width: 30%;
+  padding: 50px;
+  color: #fff;
+}
+.worker2-box {
+  width: 20%;
+  padding: 20px 0;
+  color: #fff;
+}
+.white {
+  color: #fff;
+}
+.bg-green {
+  background: #30a34a;
+}
+.zozic-bottom {
+  border-bottom: 1px solid #24bb46;
+  padding-bottom: 20px;
+}
+.zozic-bottom + div {
+  padding-top: 20px;
+}
+.hide {
+  opacity: 0;
+}
+.zozic-line2 {
+  width: 70%;
+  height: 50px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.margin-min {
+  margin-top: -50px;
+}
+.zozic-line3 {
+  position: relative;
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  border-top: 1px solid #24bb46;
+  border-left: 1px solid #24bb46;
+  border-right: 1px solid #24bb46;
+}
+.zozic-line3-1 {
+  width: 1px;
+  height: 50px;
+  background-color: #24bb46;
+  position: absolute;
+  left: 34%;
+}
+.zozic-line3-2 {
+  width: 1px;
+  height: 50px;
+  background-color: #24bb46;
+  position: absolute;
+  right: 34%;
+}
+.zozic-line4 {
+  position: relative;
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+
+  border-right: 1px solid #24bb46;
+}
+.zozic-line5 {
+  position: absolute;
+  width: 66%;
+  height: 50px;
+  right: 0;
+  top: 50%;
+  border-top: 1px solid #24bb46;
+  border-left: 1px solid #24bb46;
+}
+.zozic-line5-1 {
+  position: absolute;
+  width: 1px;
+  height: 49px;
+  right: 50%;
+  top: 0%;
+  background-color: #24bb46;
+}
+.workers {
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  line-height: 140%;
+}
+/* 조직2 */
+.zozic-wrap2 {
+  padding: 0px 0px 112px 311px;
+  box-sizing: border-box;
+}
+.zozic-title {
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.zozic-box2 {
+  padding: 24px;
+}
+.zozic-inner {
+  text-align: left;
+}
+.zozic-inner p {
+  margin: 0;
+}
+.margin-btm {
+  margin-bottom: 24px;
+}
+.zozic-inner .z-t1 {
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+.zozic-inner .z-t2 {
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+.zozic2-flex-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.zozic-box3 {
+  padding: 24px;
+  width: 25%;
+  margin-right: 24px;
+}
+.zozic-box3:last-child {
+  margin-right: 0;
+}
+.zozic-inner .z-t3 {
+  font-family: "Pretendard Variable";
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+/* 티켓예매 */
+.ticekt-wrap {
+  padding: 112px 0px 150px 311px;
+  box-sizing: border-box;
+}
+.dummy-img {
+  width: 100%;
+  height: 1520px;
+  background-color: #ee87b4;
+}
+.dummy-img h1 {
+  text-align: center;
+  color: #fff;
+}
+.ticket-button {
+  width: 100%;
+  background-color: #fff;
+  height: 92px;
+  border-radius: 8px;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 92px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #30a34a;
+  margin-top: 112px;
+}
+.ticket-button img {
+  vertical-align: middle;
+  line-height: 92px;
+  margin-left: 10px;
+}
+.ticekt-wrap a {
+  text-decoration: none;
+}
+.z-innerBox {
+  width: 100%;
+  height: 50%;
+  border-top: 1px solid #24bb46;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+.padding-20 {
+  padding: 20px 0;
+}
