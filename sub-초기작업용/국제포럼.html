@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
+    <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/sub01.css" />
+    <link rel="stylesheet" href="../css/sub02.css" />
+    <link rel="stylesheet" href="../css/sub02-02.css" />
+    <link rel="stylesheet" href="../css/history.css" />
+    <!-- jquery -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!-- rellax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>KIADA</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="mobile-header">
+        <div class="header-center">
+          <a href="javascript:void(0)" class="logo">
+            <img src="../images/Logo-m.png" />
+          </a>
+          <span class="open_btn">
+            <img src="../images/mobile menu.png" />
+          </span>
+          <div class="mobile-gnb_wrap">
+            <div class="mobile-gnb hide">
+              <ul class="dep1">
+                <li id="about" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li id="show" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 공연프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">해외작</a></li>
+                    <li><a href="#">국내작</a></li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li id="show2" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 부대프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">댄스워크숍</a></li>
+                    <li><a href="#">국제학술심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li id="kiadas" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li id="news" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li id="history" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">HISTROY</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li id="contact" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="mobile-bg hide"></div>
+            </div>
+            <!-- //mobile-gnb -->
+          </div>
+          <!-- // mobile-gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </div>
+      <header class="header">
+        <div class="header-center">
+          <div class="gnb_wrap">
+            <div class="gnb">
+              <ul class="dep1">
+                <li>
+                  <a href="javascript:void(0)" class="logo">
+                    <img src="../images/logo-kiada2020-green.svg" class="logo-g" />
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2">
+                    <li><a href="#">축제소개</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">
+                    KIADA2022<br />
+                    공연
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">참여작 소개</a></li>
+                    <li><a href="#">해외 초청작</a></li>
+                    <li>
+                      <a href="#">국내 기획 및 공모 선정작</a>
+                    </li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">
+                    KIADA2022<br />
+                    프로그램
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">워크숍</a></li>
+                    <li><a href="#">심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">아카이브</a>
+                  <ul class="dep2">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+            <!-- //gnb -->
+          </div>
+          <!-- // gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </header>
+      <div class="sub01">
+        <nav class="stickyNav">
+          <ul class="nav-ul">
+            <li><a href="/sub03/sub01.php">행사개요</a></li>
+            <li><a href="/sub03/sub02.php">워크숍</a></li>
+            <li class="nav-active"><a href="/sub03/sub03.php">국제포럼</a></li>
+            <li><a href="/sub03/sub04.php">프리레지던시</a></li>
+          </ul>
+        </nav>
+        <section class="workShop">
+          <div class="workShop-wrap">
+            <div class="workShop-title">KIADA2022 국제포럼</div>
+            <div class="workShop-head-img">
+              <img src="../sub/w-box1.png" />
+            </div>
+            <div class="workShop-head-text">
+              <p class="w-txt01">2022년 10월 31일 (월) 오후 1시 ~ 오후 3시</p>
+              <p class="w-txt02">@일산 킨텍스 제1전시장 207호</p>
+            </div>
+            <span class="w-line"></span>
+          </div>
+
+          <div class="workShop-wrap">
+            <div class="workShop-title">About</div>
+
+            <div class="w-boxWrap">
+              <div class="w-box">
+                <p>
+                  장애인 무용 예술 생태계 회복과 <br />
+                  향유를 위한 담론의 장
+                </p>
+              </div>
+              <div class="w-box">
+                <p>
+                  국내. 외 장애무용의 표준화와 <br />
+                  다양성 증진을 위한 기반 마련
+                </p>
+              </div>
+              <div class="w-box">
+                <p>
+                  장애무용예술의 가치 전환과 <br />
+                  패러다임 구축을 위한 비전 제시
+                </p>
+              </div>
+            </div>
+            <span class="w-line"></span>
+          </div>
+
+          <div class="workShop-wrap">
+            <div class="workShop-title">Agenda</div>
+            <div class="gray-agenda-wrap">
+              <div class="gray-agenda">
+                <p class="gray-agenda-tit">장애무용의 거시적 관점과 미시적 시각</p>
+                <li>국내·외 장애인·비장애인 무용 예술가, 비평가, 안무가 등 초청</li>
+                <li>장애 무용의 전반적인 사회·문화적 현상과 사회 구조, 제도 등 현안 탐색</li>
+                <li>장애 무용의 다양한 현장 활동 스토리와 무용을 매개로 세상과 소통하는 방식 공유</li>
+                <li>장애 무용의 개방적 접근을 위한 쟁점 및 예술적 가치 확산을 위한 토론</li>
+                <li>장애 무용 예술에 대한 다각적 시각과 관점을 통해 실천적 과제 탐색</li>
+              </div>
+            </div>
+          </div>
+          <div class="workShop-wrap">
+            <div class="workShop-title">발행 도서 및 저자</div>
+            <div class="gray-agenda-wrap">
+              <div class="gray-agenda-img-wrap">
+                <img src="../sub/w-box2.png" />
+              </div>
+              <div class="gray-agenda-wrap-white">
+                <div class="gray-agenda-wrap-white-inner">
+                  <div>
+                    <p class="gray-agenda-wrap-white-sub-text">
+                      무용계 소외계층에 대한 관심을 바탕으로 장애무용가들의 디딤돌 역할을 하고 있는 <br />
+                      미국 무용 저널리스트 에밀리 위더홀트(Emmaly Wiederholt)는 <br />
+                      무용 감독인 실바 라우카넨(Silva Laukkanen)와 함께 2022년 <br />
+                      <span>『Breadth of Bodies - Discussing Disability in Dance』</span>지필
+                    </p>
+                    <li>• 지구상의 최소 25%가 장애인 무용수, 무용계 활동 현장 속 리얼 스토리</li>
+                    <li>• 다양한 장애유형과 다양한 댄스장르, 다양한 정체성을 가진 세계 15개국 35명 전문 무용수들의 생생 인터뷰 기록</li>
+                    <li>• 장애인 무용수들의 교육과 활동, 예술에 대한 영역과 범위, 비평을 위한 시각 등 1인칭 시점.</li>
+                    <li>• 무엇이 예술의 영감이 되고 무엇이 기교를 만드는지 장애무용에 대한 편견과 오해의 폭을 좁힐 수 있는 기회</li>
+                    <p class="gray-agenda-wrap-white-sub-text">2022년 12월 한글 번역본 발행 예정</p>
+                  </div>
+                  <div>
+                    <img src="../sub/w-box3.png" />
+                  </div>
+                </div>
+                <div class="gray-agenda-wrap-white-redBtn">
+                  <span> #장애무용 #장애무용수 #장애무용예술 #장애무용비평 #장애무용인식 #시사점 #장애무용교육 #장애무용공연</span>
+                </div>
+              </div>
+              <div class="gray-agenda-wrap-white gray-agenda-wrap-white2">
+                <div class="gray-agenda-wrap-white-inner2">
+                  <div class="gray-agenda-wrap-white-sub-text2">
+                    <p class="white-inner-title">『Breadth of Bodies - Discussing Disability in Dance』 본문 내용 중에서...</p>
+                    <p>“ 장애는 정체성, 문화, 정치, 그리고 미적 요소처럼 장애 예술계 밖 사람들에게 친숙하지 않으며, 비평가들은 종종 안무 뒤에 있는 훈련에 대해서 인지하거나 이해하지 못한다.”</p>
+                    <p>“ 10년간 수많은 투자자들, 비평가들, 기자들에게 우리가 치료를 하는게 아니라 무용을 하고 있다는 걸 납득시키고자 노력했다.”</p>
+                    <p>“ 왜 30년이 지난 지금에서도 이 분야의 예술성이 존재하지 않는지, 우리가 할 수 있는 일이 무엇인지 짚어보고 싶었다.”</p>
+                    <p>“ 우리는 신체적으로 통합되었다는 걸 인식해야 한다. 무용은 그 자체로 예술의 한 형태이며 예술의 형태는 그 분야에서 그만의 자리를 차지할 가치가 있다.”</p>
+                    <p>“ 많은 사람들이 작품을 처음 봤을 때 일어난 일은 장애에 집중하고 있지 않다는 것이다. 나는 장애가 무용과 따른 분리 된다고 생각 하지 않으며, 그렇게 되기도 원치 않는다.”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="gray-dancer-wrap">
+                <div class="gray-dancer-left">
+                  <img src="../sub/w-dancerFrame.png" class="dancerBg" id="w-dancer01" />
+                  <p class="w-dancer-name">에밀리 위더홀트 Emmaly Wiederholt</p>
+                  <p>뉴욕 앨버커키에 기반을 둔 댄스 아티스트, 예술 저널리스트</p>
+                  <p>발레와 정치학, 예술언론학을 전공 다수의 장애 무용수업과 공연</p>
+                  <p>-</p>
+                  <p>• 미국 무용저널리즘단체 ‘Stance on Dance’ 대표</p>
+                  <p>• 2017년 Dancing 50 and Beyond 출간</p>
+                  <p>• 2022년 Discussing Disability in Dance 출간</p>
+                </div>
+                <div class="gray-dancer-right">
+                  <img src="../sub/w-dancerFrame.png" class="dancerBg" id="w-dancer02" />
+                  <p class="w-dancer-name">실바 라우카넨 Silva Laukkanen</p>
+                  <p>장애예술무용단체 ‘Body Shift’의 통합무용 감독 겸 안무가</p>
+                  <p>핀란드와 미국 텍사스 중부지역 중심으로 장애-비장애 무용수업 및 워크샵 진행</p>
+                  <p>-</p>
+                  <p>• 우토쿰푸 노스카리알라 칼리지의 무용학 학사</p>
+                  <p>• 영국 런던 트리니티 라반 음악원 커뮤니티 댄스 대학원 졸업</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="workShop-wrap">
+            <div class="gray-wrap">
+              <div class="workShop-title dark-blue">Timetable</div>
+              <table class="gray-time-table">
+                <tr>
+                  <th class="th-bg">시간</th>
+                  <th class="th-bg">순서</th>
+                  <th class="th-bg">참여자 성명</th>
+                  <th class="th-bg">국가</th>
+                </tr>
+                <tr>
+                  <td colspan="4" class="th-bg">진행 김미영 탄츠위드 대표</td>
+                </tr>
+                <tr>
+                  <td rowspan="3" class="th-bg">13:00 ~ 13:20</td>
+                  <td>개회사</td>
+                  <td>
+                    <span>최영묵</span>
+                    <span>조직위원장, 빛소리친구들 대표</span>
+                  </td>
+                  <td>한국</td>
+                </tr>
+                <tr>
+                  <td style="border-left: 1px solid #d1d1d1">환영사</td>
+                  <td>
+                    <span>김삼진</span>
+                    <span>예술감독, 한국예술종합학교 무용원장</span>
+                  </td>
+                  <td>한국</td>
+                </tr>
+                <tr>
+                  <td style="border-left: 1px solid #d1d1d1">축사</td>
+                  <td>
+                    <span>이종성</span>
+                    <span>국민의힘 국회의원</span>
+                  </td>
+                  <td>한국</td>
+                </tr>
+
+                <tr>
+                  <td rowspan="2" class="th-bg">13:20 ~ 13:40</td>
+                  <td rowspan="2">발제1</td>
+                  <td>
+                    <span>에밀리 위더홀트</span>
+                    <span> Emmaly Wiederholt</span>
+                  </td>
+                  <td>미국</td>
+                </tr>
+                <tr>
+                  <td style="border-left: 1px solid #d1d1d1">
+                    <span>실바 라우카넨 Silva Laukkanen</span>
+                    <span>Body Shift의 통합무용 감독 겸 안무가</span>
+                  </td>
+                  <td>미국</td>
+                </tr>
+
+                <tr>
+                  <td class="th-bg">13:40 ~ 14:00</td>
+                  <td>발제2</td>
+                  <td>
+                    <span>심정민</span>
+                    <span>한국춤평론가회 회장, 무용평론가</span>
+                  </td>
+                  <td>한국</td>
+                </tr>
+                <tr>
+                  <td class="th-bg">14:00 ~ 14:20</td>
+                  <td>발제3</td>
+                  <td>
+                    <span>김원영</span>
+                    <span>변호사, 장애인 무용수</span>
+                  </td>
+                  <td>한국</td>
+                </tr>
+
+                <tr>
+                  <td rowspan="5" class="th-bg">14:20 ~ 15:10</td>
+                  <td rowspan="5">자유토론</td>
+                  <td>
+                    <span>하이코헨</span>
+                    <span> Hai Cohen</span>
+                  </td>
+                  <td>이스라엘</td>
+                </tr>
+                <tr>
+                  <td style="border-left: 1px solid #d1d1d1">
+                    <span>수잔 코완</span>
+                    <span> Suzanne Cowan</span>
+                  </td>
+                  <td>뉴질랜드</td>
+                </tr>
+                <tr>
+                  <td style="border-left: 1px solid #d1d1d1">
+                    <span>김형희</span>
+                    <span>한국장애인문화예술원 이사장</span>
+                  </td>
+                  <td>한국</td>
+                </tr>
+                <tr>
+                  <td style="border-left: 1px solid #d1d1d1">
+                    <span>노정식</span>
+                    <span>용인대학교 무용과 교수</span>
+                  </td>
+                  <td>한국</td>
+                </tr>
+                <tr>
+                  <td style="border-left: 1px solid #d1d1d1">
+                    <span>오선명 </span>
+                    <span>한국문화예술위원회 극장운영부 차장</span>
+                  </td>
+                  <td>한국</td>
+                </tr>
+                <tr>
+                  <td class="th-bg">15:10 ~ 15:15</td>
+                  <td>폐회사</td>
+                  <td>
+                    <span>최영묵 </span>
+                    <span>조직위원장, 빛소리친구들 대표</span>
+                  </td>
+                  <td>한국</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="workShop-wrap">
+            <div class="gray-wrap">
+              <div class="t-row-wrap">
+                <div>주제</div>
+                <div>장애무용의 거시적 관점과 미시적 시각</div>
+              </div>
+              <div class="t-row-wrap">
+                <div>기조연설자</div>
+                <div>발제자</div>
+                <div>
+                  · 에밀리 위더홀트 Emmaly Wiederholt<br />
+                  · 실바 라우카넨 Silva Laukkanen<br />
+                  · 심정민 Jeongmin Sim<br />
+                  · 김원영 Wonyoung Kim
+                </div>
+                <div>토론자</div>
+                <div>
+                  · 하이코헨 Hai Cohen<br />
+                  · 수잔 코완 Suzanne Cowan<br />
+                  · 김형희 Hyunghee Kim<br />
+                  · 노정식 Jungsik Roh<br />
+                  · 오선명 Sunmyeong Oh
+                </div>
+              </div>
+
+              <div class="t-row-wrap">
+                <div>참석신청기간</div>
+                <div>2022년 9월 23일 (금) ~ 10월 24일 (월)</div>
+                <span>*선착순 마감</span>
+              </div>
+              <div class="t-row-wrap">
+                <div>참석자 발표</div>
+                <div>2022년 10월 26일 (수)</div>
+                <span>*참가 확정 개별 연락</span>
+              </div>
+              <div class="t-row-wrap">
+                <div>일시</div>
+                <div>2022년 10월 29일(토) 오전 10시 ~ 오후 3시 30분</div>
+              </div>
+              <div class="t-row-wrap">
+                <div>장소</div>
+                <div>이음센터 5층 이음아트홀</div>
+              </div>
+              <a href="javascript:void(0)">
+                <div class="go_form">
+                  <span>신청서 작성<img src="../sub/FeatherIconBlack.svg" /></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <img src="../logo-main-header.svg" />
+  </body>
+</html>

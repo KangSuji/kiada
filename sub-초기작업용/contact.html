@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
+    <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/sub01.css" />
+    <link rel="stylesheet" href="../css/sub02.css" />
+    <link rel="stylesheet" href="../css/history.css" />
+    <!-- jquery -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!-- rellax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <script type="text/javascript" src="../js/index.js"></script>
+    <title>KIADA</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="mobile-header">
+        <div class="header-center">
+          <a href="javascript:void(0)" class="logo">
+            <img src="../images/Logo-m.png" />
+          </a>
+          <span class="open_btn">
+            <img src="../images/mobile menu.png" />
+          </span>
+          <div class="mobile-gnb_wrap">
+            <div class="mobile-gnb hide">
+              <ul class="dep1">
+                <li id="about" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li id="show" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 공연프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">해외작</a></li>
+                    <li><a href="#">국내작</a></li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li id="show2" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 부대프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">댄스워크숍</a></li>
+                    <li><a href="#">국제학술심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li id="kiadas" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li id="news" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li id="history" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">HISTROY</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li id="contact" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="mobile-bg hide"></div>
+            </div>
+            <!-- //mobile-gnb -->
+          </div>
+          <!-- // mobile-gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </div>
+      <header class="header">
+        <div class="header-center">
+          <div class="gnb_wrap">
+            <div class="gnb">
+              <ul class="dep1">
+                <li>
+                  <a href="javascript:void(0)" class="logo">
+                    <img src="../images/logo-kiada2020-green.svg" class="logo-g" />
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2">
+                    <li><a href="#">축제소개</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">
+                    KIADA2022<br />
+                    공연
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">참여작 소개</a></li>
+                    <li><a href="#">해외 초청작</a></li>
+                    <li>
+                      <a href="#">국내 기획 및 공모 선정작</a>
+                    </li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">
+                    KIADA2022<br />
+                    프로그램
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">워크숍</a></li>
+                    <li><a href="#">심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">아카이브</a>
+                  <ul class="dep2">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+            <!-- //gnb -->
+          </div>
+          <!-- // gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </header>
+      <div class="sub01 contact">
+        <nav class="stickyNav" style="display: none">
+          <ul class="nav-ul">
+            <li class="nav-active"><a href="#">contact us</a></li>
+          </ul>
+        </nav>
+        <section class="contact-wrap">
+          <div class="contact-top">
+            <p class="contact-tit">2020 제5회 대한민국장애인국제무용제 국내작품 공고</p>
+            <p class="contact-txt">
+              대한민국장애인국제무용제 조직위원회는<br />
+              모두가 즐길 수 있는 세계인의 장애인 무용축제를 만들고자<br />
+              ‘2020년 제5회 대한민국장애인국제무용제 국내작품 출품공모’를 진행하오니<br />
+              대한민국장애인국제무용제의 새 지평을 열 예술가들의 많은 관심과 참여 바랍니다.
+            </p>
+            <p class="contact-txt">
+              2020.1.28.
+              <br /><br />
+              KIADA2020 조직위원장 최영묵
+            </p>
+          </div>
+          <div class="contact-bottom">
+            <div class="contact-bottom-label">
+              <div class="contact-label-tit">지원자 정보</div>
+              <fieldset>
+                <span class="contact-label-subtit"> 지원분야<span class="important-color">*</span> </span><br />
+                <input type="radio" id="group" name="field" /><label for="group">단체작</label> <input type="radio" name="field" id="duet" /><label for="duet">듀엣</label>
+                <input type="radio" name="field" id="solo" /><label for="solo">솔로</label>
+              </fieldset>
+              <fieldset>
+                <span class="contact-label-subtit">공모구분<span class="important-color">*</span></span
+                ><br />
+                <input type="radio" name="division" id="existing" /><label for="existing">기존작품</label> <input type="radio" name="division" id="new" /><label for="new">신작</label>
+              </fieldset>
+            </div>
+            <div class="contact-form">
+              <div class="contact-row">
+                <p class="contact-label-subtit">단체명 또는 프로젝트명<span class="important-color">*</span></p>
+                <input type="text" placeholder="단체명 또는 프로젝트명을 입력하세요" />
+              </div>
+              <div class="contact-row">
+                <p class="contact-label-subtit">성명<span class="important-color">*</span></p>
+                <input type="text" placeholder="신청하시는 분의 성함을 입력해주세요." />
+              </div>
+              <div class="contact-row">
+                <p class="contact-label-subtit">주소<span class="important-color">*</span></p>
+                <input type="text" placeholder="주소지를 입력해주세요." />
+              </div>
+              <div class="contact-row">
+                <p class="contact-label-subtit">전화번호<span class="important-color">*</span></p>
+                <input type="text" placeholder="연락 가능한 전화번호를 입력해주세요." />
+              </div>
+              <div class="contact-row">
+                <p>대표자 Email<span class="important-color">*</span></p>
+                <input type="text" placeholder="연락 가능한 Email을 입력해주세요." />
+              </div>
+              <div class="contact-row">
+                <p class="contact-label-subtit">홈페이지 또는 SNS 채널<span class="important-color">*</span></p>
+                <input type="text" placeholder="작품 활동을 알 수 있는 온라인 URL을 입력해주세요." />
+              </div>
+            </div>
+          </div>
+          <div class="contact-bottom">
+            <div class="contact-bottom-label">
+              <div class="contact-label-tit">지원자 정보</div>
+            </div>
+            <div class="contact-form">
+              <div class="contact-row">
+                <p class="contact-label-subtit">작품명<span class="important-color">*</span></p>
+                <input type="text" placeholder="" />
+              </div>
+              <div class="contact-row2">
+                <div>
+                  <p class="contact-label-subtit">안무 / 연출<span class="important-color">*</span></p>
+                  <input type="text" placeholder="" />
+                </div>
+                <div>
+                  <p class="contact-label-subtit">극작 / 음악감독<span class="important-color">*</span></p>
+                  <input type="text" placeholder="" />
+                </div>
+              </div>
+              <div class="contact-row2">
+                <div>
+                  <p class="contact-label-subtit">안무 / 연출<span class="important-color">*</span></p>
+                  <input type="text" placeholder="" />
+                </div>
+                <div>
+                  <p class="contact-label-subtit">극작 / 음악감독<span class="important-color">*</span></p>
+                  <input type="text" placeholder="" />
+                </div>
+              </div>
+              <div class="contact-row2">
+                <div>
+                  <p class="contact-label-subtit">안무 / 연출<span class="important-color">*</span></p>
+                  <input type="text" placeholder="" />
+                </div>
+                <div>
+                  <p class="contact-label-subtit">극작 / 음악감독<span class="important-color">*</span></p>
+                  <input type="text" placeholder="" />
+                </div>
+              </div>
+              <div class="contact-row">
+                <p class="contact-label-subtit">
+                  작품명<span class="important-color">*</span><br />
+                  <span class="contact-txt">광고 카피가 아닌 공연을 가장 정확하게 표현할 수 있는 문장으로 안무가/연출가/제작자가 작성해주시기 바랍니다.</span>
+                </p>
+                <textarea></textarea>
+              </div>
+              <div class="contact-row">
+                <p class="contact-label-subtit">작품명<span class="important-color">*</span><br /></p>
+                <textarea></textarea>
+              </div>
+              <div class="contact-row">
+                <p class="contact-label-subtit">
+                  작품명<span class="important-color">*</span><br />
+                  <span class="contact-txt">광고 카피가 아닌 공연을 가장 정확하게 표현할 수 있는 문장으로 안무가/연출가/제작자가 작성해주시기 바랍니다.</span>
+                </p>
+                <textarea></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="contact-bottom">
+            <div class="contact-bottom-label">
+              <div class="contact-label-tit">예산계획</div>
+            </div>
+
+            <div class="contact-bottom-label contact-form contact-bottom-label2">
+              <div>
+                <p class="contact-label-subtit">항목</p>
+                <input type="text" placeholder="ex)" />
+              </div>
+              <div>
+                <p class="contact-label-subtit">산출 근거</p>
+                <input type="text" placeholder="ex)" />
+              </div>
+              <div>
+                <p class="contact-label-subtit">지출액</p>
+                <input type="text" placeholder="ex)" />
+              </div>
+              <div>
+                <p class="contact-label-subtit">비고</p>
+                <input type="text" placeholder="ex)" />
+              </div>
+            </div>
+            <div class="contact-form">
+              <div class="contact-row">
+                <p class="contact-label-subtit">공연장<span class="important-color">*</span></p>
+                <input type="text" placeholder="공연장명을 입력하세요" />
+              </div>
+              <div class="contact-row">
+                <p class="contact-label-subtit">공연 기간<span class="important-color">*</span></p>
+                <input type="text" placeholder="공연 기간을 입력하세요" />
+              </div>
+              <div class="contact-row">
+                <p class="contact-label-subtit">공연 횟수<span class="important-color">*</span></p>
+                <input type="text" placeholder="공연 횟수을 입력하세요" />
+              </div>
+            </div>
+          </div>
+
+          <div class="submitBtn">
+            <span>제출하기</span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

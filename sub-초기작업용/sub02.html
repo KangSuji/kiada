@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
+    <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/sub01.css" />
+    <link rel="stylesheet" href="../css/sub02.css" />
+    <link rel="stylesheet" href="../css/subResponsive.css" />
+    <!-- jquery -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!-- rellax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>KIADA</title>
+  </head>
+  <body>
+    <div id="wrap" style="overflow: unset">
+      <div class="mobile-header">
+        <div class="header-center">
+          <a href="javascript:void(0)" class="logo">
+            <img src="../images/Logo-m.png" />
+          </a>
+          <span class="open_btn">
+            <img src="../images/mobile menu.png" />
+          </span>
+          <div class="mobile-gnb_wrap">
+            <div class="mobile-gnb hide">
+              <ul class="dep1">
+                <li id="about" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li id="show" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 공연프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">해외작</a></li>
+                    <li><a href="#">국내작</a></li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li id="show2" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 부대프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">댄스워크숍</a></li>
+                    <li><a href="#">국제학술심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li id="kiadas" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li id="news" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li id="history" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">HISTROY</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li id="contact" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="mobile-bg hide"></div>
+            </div>
+            <!-- //mobile-gnb -->
+          </div>
+          <!-- // mobile-gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </div>
+      <header class="header">
+        <div class="header-center">
+          <div class="gnb_wrap">
+            <div class="gnb">
+              <ul class="dep1">
+                <li>
+                  <a href="javascript:void(0)" class="logo">
+                    <img src="../images/logo-kiada2020-green.svg" class="logo-g" />
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2">
+                    <li><a href="#">축제소개</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">
+                    KIADA2022<br />
+                    공연
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">참여작 소개</a></li>
+                    <li><a href="#">해외 초청작</a></li>
+                    <li>
+                      <a href="#">국내 기획 및 공모 선정작</a>
+                    </li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">
+                    KIADA2022<br />
+                    프로그램
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">워크숍</a></li>
+                    <li><a href="#">심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">아카이브</a>
+                  <ul class="dep2">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+            <!-- //gnb -->
+          </div>
+          <!-- // gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </header>
+      <div class="sub01">
+        <nav class="stickyNav">
+          <ul class="nav-ul">
+            <li class="nav-active"><a href="#">개요</a></li>
+            <li><a href="#">인사말</a></li>
+            <li><a href="#">조직현황</a></li>
+            <li><a href="#">함께하는 사람들</a></li>
+          </ul>
+        </nav>
+        <section class="kiada_intro-wrap">
+          <div class="intro-top">
+            <img src="../sub/kiadaIntro.png" />
+          </div>
+          <div class="introImg-wrap">
+            <div class="introImg01-wrap">
+              <img src="../sub/image26.png" class="introImg01" />
+            </div>
+            <img src="../sub/image27.png" class="introImg02" />
+            <img src="../sub/image28.png" class="introImg03" />
+            <div class="intro-top">
+              <div class="subIntor-text">
+                <p>
+                  KIADA는 2016년 대한민국에서 최초로 펼쳐진 장애인국제무용제로,<br />
+                  동시대의 장애인 무용예술가 및 공연예술가간의 초국가적 협업을 시도하여 <br />
+                  상호이해를 높이고 모두가 즐길 수 있는 <br />
+                  <span class="gradation">세계인의 장애인 무용축제</span>를 만들고자 기획되었습니다.
+                </p>
+                <p>
+                  대한민국을 대표하는 K‐콘텐츠 <span class="gradation">‘세계 유일의 장애인국제무용제 KIADA’</span>를 통해<br />
+                  장애무용의 공연 제작 환경과 정보유통 채널의 다각화, <br />
+                  인적 네트워크를 공고히 하며 세계 장애인무용생태계에 확산하고 <br />
+                  공유하고자 합니다.
+                </p>
+              </div>
+            </div>
+            <div class="intro-top">
+              <img src="../sub/sub-06.png" class="introImg05" />
+              <div class="introImg05Text">
+                세계 각국의 장애인 무용의 교류와 소통의 장으로서<br />
+                상호공감 및 이해관계증진 활동
+              </div>
+              <img src="../sub/sub-05.png" class="introImg06" />
+              <div class="introImg06Text">
+                국내, 외 장애인 무용 예술가들의<br />
+                협업 작업과 작품 제작 및 공연 활동 지원
+              </div>
+              <img src="../sub/sub-07.png" class="introImg05" />
+              <div class="introImg05Text">
+                장애무용 예술의 표준화를 위한<br />
+                다각적 방법론 탐색
+              </div>
+              <img src="../sub/sub-08.jpg" class="introImg05" />
+              <div class="introImg05Text">
+                장애무용의 지속 가능한 발전을 위한<br />
+                리서치 및 연구, 평가 활동
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- <footer class="footer">
+        <div class="footer-wrap">
+          <div class="footer-left">
+            <div class="footer-organizer">
+              <p class="t01">대한민국장애인국제무용제 조직위원회</p>
+              <p class="t02">KIADA 사무국 서울시 마포구 성산로 144 403호</p>
+              <p class="t02">with.kiada@gmail.com</p>
+            </div>
+            <div class="copyright-txt t02"><p>&copy; 2022 KIADA All rights reserved</p></div>
+          </div>
+          <div class="footer-right">
+            <div class="sns">
+              <img src="../images/instagram.png" />
+              <img src="../images/facebook.png" />
+              <img src="../images/youtube.png" />
+            </div>
+          </div>
+        </div>
+      </footer> -->
+    </div>
+  </body>
+</html>
+<script>
+  function addOver(id) {
+    if ($("#" + id).hasClass("over")) {
+      $("#" + id).removeClass("over");
+    } else {
+      $("#" + id).addClass("over");
+    }
+  }
+  $(".open_btn").click(function () {
+    if ($(".mobile-gnb").hasClass("hide")) {
+      $(".mobile-gnb").removeClass("hide");
+      $(".mobile-bg").removeClass("hide");
+    } else {
+      $(".mobile-gnb").addClass("hide");
+      $(".mobile-bg").addClass("hide");
+    }
+  });
+</script>

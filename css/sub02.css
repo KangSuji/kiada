@@ -433,7 +433,7 @@
 .program-right p,
 .program-right li {
   font-family: "Pretendard Variable";
-  font-size: 32px;
+  font-size: 24px;
   line-height: 150%;
   letter-spacing: -0.04em;
   color: #000036;
@@ -453,15 +453,18 @@
   float: left;
   margin-top: -10px;
 }
-.margin-bottom-40 {
+.margin-bottom-10 {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 .gray {
   background: #c9c7c2;
 }
 .bg-green {
   background: #30a34a;
+}
+.bg-what {
+  background-color: #68cc58;
 }
 p.yellow {
   color: #fff100;
@@ -634,6 +637,10 @@ p.yellow {
 }
 .marginNone {
   margin: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 /* 조직도 */
 .zozic {

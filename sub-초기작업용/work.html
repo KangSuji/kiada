@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
+    <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/sub01.css" />
+    <link rel="stylesheet" href="../css/sub02.css" />
+    <link rel="stylesheet" href="../css/sub02-02.css" />
+    <link rel="stylesheet" href="../css/subResponsive.css" />
+    <!-- jquery -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!-- rellax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>KIADA</title>
+  </head>
+  <body>
+    <div id="wrap" style="overflow: unset">
+      <div class="mobile-header">
+        <div class="header-center">
+          <a href="javascript:void(0)" class="logo">
+            <img src="../images/Logo-m.png" />
+          </a>
+          <span class="open_btn">
+            <img src="../images/mobile menu.png" />
+          </span>
+          <div class="mobile-gnb_wrap">
+            <div class="mobile-gnb hide">
+              <ul class="dep1">
+                <li id="about" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li id="show" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 공연프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">해외작</a></li>
+                    <li><a href="#">국내작</a></li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li id="show2" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 부대프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">댄스워크숍</a></li>
+                    <li><a href="#">국제학술심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li id="kiadas" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li id="news" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li id="history" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">HISTROY</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li id="contact" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="mobile-bg hide"></div>
+            </div>
+            <!-- //mobile-gnb -->
+          </div>
+          <!-- // mobile-gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </div>
+      <header class="header">
+        <div class="header-center">
+          <div class="gnb_wrap">
+            <div class="gnb">
+              <ul class="dep1">
+                <li>
+                  <a href="javascript:void(0)" class="logo">
+                    <img src="../images/logo-kiada2020-green.svg" class="logo-g" />
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2">
+                    <li><a href="#">축제소개</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">
+                    KIADA2022<br />
+                    공연
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">참여작 소개</a></li>
+                    <li><a href="#">해외 초청작</a></li>
+                    <li>
+                      <a href="#">국내 기획 및 공모 선정작</a>
+                    </li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">
+                    KIADA2022<br />
+                    프로그램
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">워크숍</a></li>
+                    <li><a href="#">심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">아카이브</a>
+                  <ul class="dep2">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+            <!-- //gnb -->
+          </div>
+          <!-- // gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </header>
+      <div class="sub01">
+        <nav class="stickyNav">
+          <ul class="nav-ul">
+            <li><a href="#">공연개요</a></li>
+            <li><a href="#">해외작</a></li>
+            <li><a href="#">국내작</a></li>
+            <li class="nav-active"><a href="#">티켓예매</a></li>
+          </ul>
+        </nav>
+        <section class="workShop">
+          <div class="workShop-wrap">
+            <div class="workShop-title">뇌. 몸. 짓. 인터랙티브 댄스 워크숍</div>
+            <div class="workShop-head-img">
+              <img src="../sub/workShop01.png" />
+            </div>
+            <div class="workShop-head-text">
+              <p class="w-txt01">2022년 10월 29일 (토) 오전 10시 ~ 오후 3시 30분</p>
+              <p class="w-txt02">@이음센터 5층 이음아트홀</p>
+            </div>
+            <span class="w-line"></span>
+          </div>
+
+          <div class="workShop-wrap">
+            <div class="workShop-title">About</div>
+
+            <div class="w-boxWrap">
+              <div class="w-box">
+                <p>
+                  뉴노멀시대<br />
+                  장애무용 교육의 다각적 접근
+                </p>
+              </div>
+              <div class="w-box">
+                <p>
+                  글로벌 장애무용 경험을 통한<br />
+                  무용 활동 및 예술 역량 향상
+                </p>
+              </div>
+              <div class="w-box">
+                <p>
+                  장애인 무용 예술 활동의<br />
+                  새로운 비전 제시
+                </p>
+              </div>
+            </div>
+            <span class="w-line"></span>
+          </div>
+
+          <div class="workShop-wrap">
+            <div class="workShop-title">Agenda</div>
+            <div class="orange-wrap">
+              <div class="workShop-head-img">
+                <img src="../sub/workShop02.png" />
+              </div>
+              <div class="workShop-info">
+                <div class="w-info-title">
+                  <img src="../sub/w-tit01.png" alt="이런 것들을 기대해요" />
+                </div>
+                <div class="w-info-text-warp">
+                  <div class="w-info-text">
+                    <p>
+                      다양한 지각을 통한 <br />
+                      인지 능력 향상
+                    </p>
+                    <p>
+                      다양한 감각 자극에 대한 의식적 기록을 통해 과거의 경험에 의미를 부여하거나 본능적으로 다른 감각기능과 비교하며 지각, 기억, 상상, 개념, 판단, 추리 등을 바탕으로 마음을 움직이게
+                      하는 인지능력을 향상시킨다.
+                    </p>
+                  </div>
+                  <div class="w-info-text">
+                    <p>
+                      예술적 표상화를 통한<br />
+                      창의적 표현
+                    </p>
+                    <p>
+                      사회구성원과의 관계 속에서 모방적, 표현적, 인습적 양식 등 다양한 형태로 자신과 타인에 대한 표상을 형성하고 내면화된 생각과 느낌, 감각과 기억 등이 내포된 창의적 움직임을 표현할 수
+                      있게 한다.
+                    </p>
+                  </div>
+                  <div class="w-info-text">
+                    <p>
+                      근접발달영역을 통한<br />
+                      안정된 정체감 형성
+                    </p>
+                    <p>
+                      아동이 독립적으로 문제를 해결하는 과정 속에서 대화 및 질문을 통한 부모와 교사, 또래집단의 적절한 비계설정은 아동이 성취할 수 있는 잠재적 수준 능력을 성장시키며, 자기 가치감과
+                      안정된 정체감의 근원이 될 수 있다.
+                    </p>
+                  </div>
+                </div>
+                <div class="w-info-title">
+                  <img src="../sub/w-tit02.png" alt="함께하는 안무가" />
+                </div>
+                <div class="dancer-info-wrap">
+                  <img src="../sub/workShopPhoto01.png" />
+                  <div class="dancer-text-wrap">
+                    <p class="d-txt01">안무가</p>
+                    <p class="d-txt02">실바 라우카넨 Silva Laukkanen</p>
+                    <p class="d-txt03">
+                      · 현 장애예술무용단체 Body Shift(www.bodyshift.org)통합 무용 감독 겸 안무가<br />
+                      · 우토쿰푸 노스카리알라 칼리지 무용학 학사<br />
+                      · 영국 런던 트리니티 라반 음악원 커뮤니티 댄스 대학원 졸업<br />
+                      · 핀란드 및 미국 텍사스 중부지역을 중심으로 장애-비장애 통합 무용수업 및 워크숍 다수 진행
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="workShop-wrap">
+            <div class="orange-wrap">
+              <div class="workShop-title dark-blue">Timetable</div>
+              <div class="w-timeTable-wrap">
+                <div class="timeTable-head">
+                  <div>1부</div>
+                  <div>10:00 ~ 11:30</div>
+                </div>
+                <div class="timeTable-row-wrap">
+                  <div class="timeTable-row">아이스 브레이킹</div>
+                  <div class="timeTable-row">브레인 댄스(Brain Dance)</div>
+                  <div class="timeTable-row">주제와 춤</div>
+                </div>
+              </div>
+              <div class="w-timeTable-wrap">
+                <div class="timeTable-head">
+                  <div>11:30~12:30</div>
+                </div>
+                <div class="timeTable-row-wrap">
+                  <div class="timeTable-row">11:30~12:30</div>
+                </div>
+              </div>
+              <div class="w-timeTable-wrap">
+                <div class="timeTable-head">
+                  <div>2부</div>
+                  <div>12:30 ~ 14:00</div>
+                </div>
+                <div class="timeTable-row-wrap">
+                  <div class="timeTable-row">주제 탐구 및 무용 창작 활동</div>
+                  <div class="timeTable-row">활동 기반 쇼케이스</div>
+                </div>
+              </div>
+              <div class="w-timeTable-wrap">
+                <div class="timeTable-head">
+                  <div>워크숍 리뷰</div>
+                  <div>14:00~15:30</div>
+                </div>
+                <div class="timeTable-row-wrap">
+                  <div class="timeTable-row">리뷰 및 피드백</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="workShop-wrap">
+            <div class="orange-wrap">
+              <div class="t-row-wrap">
+                <div>주제</div>
+                <div>뇌.몸.짓. 인터렉티브 댄스 워크숍</div>
+              </div>
+              <div class="t-row-wrap">
+                <div>안무가</div>
+                <div>실바 라우카 Silva Laukanen</div>
+              </div>
+              <div class="t-row-wrap">
+                <div>참여대상</div>
+                <div>
+                  · 장애 아동·청소년 25명과 무용수업 참여 가능한 보호자 1인<br />
+                  · 장애유형과 경중에 관계없이 누구나 참여 가능
+                </div>
+              </div>
+              <div class="t-row-wrap">
+                <div>참여신청기간</div>
+                <div>2022년 09월 23일(금)~ 10월 24일(월)까지</div>
+              </div>
+              <div class="t-row-wrap">
+                <div>참여자 발표</div>
+                <div>2022년 10월 11일(월) 개별연락 *선착순 마감</div>
+              </div>
+              <div class="t-row-wrap">
+                <div>일시</div>
+                <div>2022년 10월 29일(토) 오전 10시 ~ 오후 3시 30분</div>
+              </div>
+              <div class="t-row-wrap">
+                <div>장소</div>
+                <div>이음센터 5층 이음아트홀</div>
+              </div>
+              <a href="javascript:void(0)">
+                <div class="go_form">
+                  <span>신청서 작성<img src="../sub/FeatherIconOrange.svg" /></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

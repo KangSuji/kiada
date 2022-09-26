@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/sub.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/subResponsive.css" />
+    <!-- jquery -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!-- rellax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <script type="text/javascript" src="../js/index.js"></script>
+    
+    <title>KIADA</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="mobile-header">
+        <div class="header-center">
+          <a href="javascript:void(0)" class="logo">
+            <img src="../images/Logo-m.png" />
+          </a>
+          <span class="open_btn">
+            <img src="../images/mobile menu.png" />
+          </span>
+          <div class="mobile-gnb_wrap">
+            <div class="mobile-gnb hide">
+              <ul class="dep1">
+                <li id="about" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li id="show" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 공연프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">해외작</a></li>
+                    <li><a href="#">국내작</a></li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li id="show2" onclick="addOver(id)">
+                  <a href="#" class="dep1_a"> 부대프로그램 </a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">댄스워크숍</a></li>
+                    <li><a href="#">국제학술심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li id="kiadas" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li id="news" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li id="history" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">HISTROY</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li id="contact" onclick="addOver(id)">
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                  <ul class="dep2" style="margin: 0">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="mobile-bg hide"></div>
+            </div>
+            <!-- //mobile-gnb -->
+          </div>
+          <!-- // mobile-gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </div>
+      <header class="header">
+        <div class="header-center">
+          <div class="gnb_wrap">
+            <div class="gnb">
+              <ul class="dep1">
+                <li>
+                  <a href="javascript:void(0)" class="logo">
+                    <img src="../images/logo-kiada2020-green.svg" class="logo-g" />
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="javascript:void(0)"></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <ul class="dep2">
+                    <li><a href="#">축제소개</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직현황</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">
+                    KIADA2022<br />
+                    공연
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="#">공연개요</a></li>
+                    <li><a href="#">참여작 소개</a></li>
+                    <li><a href="#">해외 초청작</a></li>
+                    <li>
+                      <a href="#">국내 기획 및 공모 선정작</a>
+                    </li>
+                    <li><a href="#">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">
+                    KIADA2022<br />
+                    프로그램
+                  </a>
+                  <ul class="dep2">
+                    <li><a href="#">행사일정</a></li>
+                    <li><a href="#">워크숍</a></li>
+                    <li><a href="#">심포지엄</a></li>
+                    <li><a href="#">레지던시</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">키아다즈</a>
+                  <ul class="dep2">
+                    <li><a href="#">키아다즈 소개</a></li>
+                    <li><a href="#">키아다즈 활동</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">소식</a>
+                  <ul class="dep2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">영상</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">아카이브</a>
+                  <ul class="dep2">
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                    <li><a href="#">2016</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dep1_a">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+            <!-- //gnb -->
+          </div>
+          <!-- // gnb_wrap -->
+        </div>
+        <!-- // header-center -->
+      </header>
+
+      <div class="sub01 history">
+        <nav class="stickyNav" >
+          <ul class="nav-ul">
+            <li><a href="/sub06/sub2021.html">2021</a></li>
+            <li ><a href="/sub06/sub2020.html">2020</a></li>
+            <li ><a href="/sub06/sub2019.html">2019</a></li>
+            <li ><a href="/sub06/sub2018.html">2018</a></li>
+            <li><a href="/sub06/sub2017.html">2017</a></li>
+            <li class="nav-active"><a href="/sub06/sub2016.html">2016</a></li>
+          </ul>
+        </nav>
+        
+        <section class="kiada-history-top">
+        
+          <div class="history-left">
+            <div class="history-left-list">
+            <dl>
+              <dt>장소</dt>
+              <dd>아르코예술극장 대극장·소극장</dd>
+            </dl>
+            <dl>
+              <dt>공연기간</dt>
+              <dd>2016. 09. 08 ~ 09. 10</dd>
+            </dl>
+            <dl>
+              <dt>총 관객수</dt>
+              <dd>1,790명 (2016년 9월 첫째 주: 공연박스오피스 무용/발레 부문 1위)</dd>
+            </dl>
+            <dl>
+              <dt>참가팀</dt>
+              <dd>
+                총 17 팀<br />
+                - 아르코 대극장: 개막작, 폐막작, 국내 4, 해외 5<br />
+                - 아르코 소극장: 국내 소품작 2, 국내 솔로공연 4<br />
+                - 참여국가: 독일, 미국, 스페인, 일본, 핀란드, 한국
+              </dd>
+            </dl>
+            <dl>
+              <dt>부대프로그램</dt>
+              <dd>
+                장애인무용 지도자 집중 워크숍<br />
+                해외초청 안무가 워크숍 시리즈<br />
+                학술심포지엄
+              </dd>
+            </dl>
+      
+      
+            </div>
+      
+            <div class="timetable-btn">
+              <span>time table</span>
+              <span>
+                <img src="../images/arrow-right.png" />
+              </span>
+            </div>
+          </div>
+          <div class="history-right">
+            <img src="../images/2016/KIADA2016-poster.png" />
+          </div>
+        </section>
+      
+        <!-- timeTable modal -->
+        <section class="history-modal">
+          <div class="modal-header">
+            <h2 class="modal-title">TIME TABLE</h2>
+            <h2 href="#" class="btn-close">X</h2>
+          </div>
+          <div class="modal-subtitle">메인 프로그램 MAIN PROGRAM</div>
+          <div class="modal-program-wrap">
+            <div class="modal-program-location">
+              아르코예술극장 대극장·소극장<br />
+              <span class="">Arko Arts Theater</span>
+            </div>
+            <div class="modal-program-box-wrap">
+      
+              <div class="modal-program-box">
+                <div class="modal-program-box-date">아르코예술극장 대극장 9. 8. THU 20:00</div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">공존(共Zone)</p>
+                  <p class="modal-program-box-txt">
+                    <span>대한민국 South Korea</span>
+                     <span>빛소리친구들 · 코리아댄스시어터</span>
+                    <span>지체장애 Physical Impairment</span>			
+                  </p>
+                </div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">시그널: 춤의 속삭임</p>
+                  <p class="modal-program-box-txt">
+                   <span>대한민국 South Korea</span>
+                    <span>룩스-빛(The LUX-Light)・선화예술고등학교 무용부</span>
+                    <span>시각장애 Visual Impariment</span>
+                  </p> 
+                </div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">봄, 따스한 바람으로 다가오는</p>
+                  <p class="modal-program-box-txt">
+                     <span>대한민국 South Korea</span>
+                   <span>서정춤세상</span>
+                    <span>청각장애 Hearing Impairment</span>
+                  </p>            
+                </div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">Body Realities</p>
+                  <p class="modal-program-box-txt">
+                   <span>독일 Germany</span>
+                   <span>DIN A 13 TANZCOMPANY</span>
+                    <span>지체장애 Physical Impairment</span>
+                  </p>            
+                </div>
+      
+              </div>
+      <!-- //-----------------------------------------------------------------------------// -->
+              <div class="modal-program-box" >
+                <div class="modal-program-box-date">아르코예술극장 소극장 9. 8. THU 16:00</div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">만남: 소나기</p>
+                  <p class="modal-program-box-txt">
+                    <span>대한민국 South Korea</span>
+                     <span>유선식</span>
+                    <span>뇌병변장애 Brain Lesions</span>
+                  </p>
+                </div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">돋보기</p>
+                  <p class="modal-program-box-txt">
+                    <span>대한민국 South Korea</span>
+                    <span>김진호</span>
+                    <span>지체장애 Physical Impairment</span>
+                  </p>          
+                </div>	
+                
+              </div>
+              <!-- //modal-program-box-->
+            </div>
+            <!-- //modal-program-box-wrap-->
+      
+            <div class="modal-program-wrap">      
+            <div class="modal-program-box-wrap">
+      
+              <div class="modal-program-box">
+                <div class="modal-program-box-date">9. 9. FRI 20:00</div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">가능한 춤</p>
+                  <p class="modal-program-box-txt">
+                    <span>대한민국 South Korea</span>
+                     <span>춤추는 은평재활원</span>
+                    <span>지적장애 Intellectual Disability</span>			
+                  </p>
+                </div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">헬렌켈러-기적의 사람</p>
+                  <p class="modal-program-box-txt">
+                   <span>대한민국 South Korea</span>
+                    <span>댄스시어터샤하르 · (사)디티에스행복들고나</span>
+                    <span>시각장애 Visual Impairment</span>
+                  </p> 
+                </div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">도깨비가 사랑한 숲</p>
+                  <p class="modal-program-box-txt">
+                   <span>일본 Japan</span>
+                   <span>Api∞Lucky an inclusive company</span>
+                    <span>발달장애 지체장애 Developmental Disability Physical Impairment</span>
+                  </p>            
+                </div>					
+      
+      
+              </div>
+      <!-- //-----------------------------------------------------------------------------// -->
+              <div class="modal-program-box" >
+                <div class="modal-program-box-date">9. 9. FRI 16:00</div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">Keep Going</p>
+                  <p class="modal-program-box-txt">
+                    <span>대한민국 South Korea</span>
+                     <span>강성국</span>
+                    <span>뇌병변장애 Brain Lesions</span>
+                  </p>
+                </div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">살풀이</p>
+                  <p class="modal-program-box-txt">
+                    <span>대한민국 South Korea</span>
+                    <span>김영민</span>
+                    <span>청각장애 Hearing Impairment</span>
+                  </p>          						
+                </div>
+                
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">돌아가는 길</p>
+                  <p class="modal-program-box-txt">
+                    <span>대한민국 South Korea</span>
+                    <span>김용우</span>
+                    <span>지체장애 Physical Impairment</span>
+                  </p>          
+                  
+                </div>	
+              </div>
+              <!-- //modal-program-box-->
+        
+            </div>
+            <!-- //modal-program-box-wrap-->	
+      
+            <div class="modal-program-wrap">      
+            <div class="modal-program-box-wrap">
+      
+              <div class="modal-program-box">
+                <div class="modal-program-box-date">9. 10. SAT 16:00</div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">미스 재앙</p>
+                  <p class="modal-program-box-txt">
+                    <span>핀란드 Finland</span>
+                     <span>Minni Hirvonen</span>
+                    <span>지체장애 Physical Impairment</span>			
+                  </p>
+                </div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">Petit Cyclamen</p>
+                  <p class="modal-program-box-txt">
+                   <span>스페인 Spain</span>
+                    <span>YUR DANCE</span>
+                    <span>지체장애 Physical Impairment</span>
+                  </p> 
+                </div>
+      
+                <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">Tenement</p>
+                  <p class="modal-program-box-txt">
+                   <span>미국 The United States</span>
+                   <span>FULL RADIUS DANCE</span>
+                    <span>지체장애 Physical Impariment</span>
+                  </p>            
+                </div>		
+                
+                  <div class="modal-program-box-list">
+                  <p class="modal-program-box-tit">COME! COME!</p>
+                  <p class="modal-program-box-txt">
+                   <span>대한민국 South Korea</span>
+                   <span>트러스트 무용단</span>
+                    <span>지체장애 시각장애 Physical Impairment Visual Impairment</span>
+                  </p>            
+                </div>		
+      
+      
+              </div>
+      <!-- //-----------------------------------------------------------------------------// -->
+              <div class="modal-program-box" >
+                <div class="modal-program-box-date"></div>
+              </div>
+              <!-- //modal-program-box-->
+            </div>
+            <!-- //modal-program-box-wrap-->	
+        </section>
+        <!-- //timeTable modal -->
+      
+        <!-- year -->
+        <div class="tickerwrapper no-rotate">
+          <div class="years-ticker ticker">
+            <span class="ticker-item">2016</span>
+            <span class="ticker-item">2016</span>
+            <span class="ticker-item">2016</span>
+            <span class="ticker-item">2016</span>
+            <span class="ticker-item">2016</span>
+            <span class="ticker-item">2016</span>
+          </div>
+        </div>
+        <!-- //year -->
+      
+      <section class="history-item-wrap">
+        <div class="nav-inner">
+          <ul class="kiada-archive-works-list">
+            <li class="">
+              <a href="#work-2016-01" class="transition">
+                <h3 class="kiada-work-title">시그널: 춤의 속삭임</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">룩스-빛(The LUX-Light)・선화예술고등학교 무용부</p>
+                  <p class="nation"><span class="font-themefont">South Korea</span>대한민국</p>
+                  <p class="disable"><span class="font-themefont">Visual Impariment</span>시각장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-02" class="transition">
+                <h3 class="kiada-work-title">공존(共Zone)</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">빛소리친구들 · 코리아댄스시어터</p>
+                  <p class="nation"><span class="font-themefont">South Korea</span>대한민국</p>
+                  <p class="disable"><span class="font-themefont">Physical Impairment</span>지체장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-03" class="transition">
+                <h3 class="kiada-work-title">봄, 따스한 바람으로 다가오는</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">서정춤세상</p>
+                  <p class="nation"><span class="font-themefont">South Korea</span>대한민국</p>
+                  <p class="disable"><span class="font-themefont">Hearing Impairment</span>청각장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-04" class="transition">
+                <h3 class="kiada-work-title">가능한 춤</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">춤추는 은평재활원</p>
+                  <p class="nation"><span class="font-themefont">South Korea</span>대한민국</p>
+                  <p class="disable"><span class="font-themefont">Intellectual Disability</span>지적장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-05" class="transition">
+                <h3 class="kiada-work-title">헬렌켈러-기적의 사람</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">댄스시어터샤하르 · (사)디티에스행복들고나</p>
+                  <p class="nation"><span class="font-themefont">South Korea</span>대한민국</p>
+                  <p class="disable"><span class="font-themefont">Visual Impairment</span>시각장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-06" class="transition">
+                <h3 class="kiada-work-title">COME! COME!</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">트러스트 무용단</p>
+                  <p class="nation"><span class="font-themefont">South Korea</span>대한민국</p>
+                  <p class="disable"><span class="font-themefont">Physical Impairment Visual Impairment</span>지체장애 시각장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-07" class="transition">
+                <h3 class="kiada-work-title">Body Realities</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">DIN A 13 TANZCOMPANY</p>
+                  <p class="nation"><span class="font-themefont">Germany</span>독일</p>
+                  <p class="disable"><span class="font-themefont">Physical Impairment</span>지체장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-08" class="transition">
+                <h3 class="kiada-work-title">도깨비가 사랑한 숲</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">Api∞Lucky an inclusive company</p>
+                  <p class="nation"><span class="font-themefont">Japan</span>일본</p>
+                  <p class="disable"><span class="font-themefont">Developmental Disability Physical Impairment</span>발달장애 지체장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-09" class="transition">
+                <h3 class="kiada-work-title">미스 재앙</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">Minni Hirvonen</p>
+                  <p class="nation"><span class="font-themefont">Finland</span>핀란드</p>
+                  <p class="disable"><span class="font-themefont">Physical Impairment</span>지체장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-10" class="transition">
+                <h3 class="kiada-work-title">Petit Cyclamen</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">YUR DANCE</p>
+                  <p class="nation"><span class="font-themefont">Spain</span>스페인</p>
+                  <p class="disable"><span class="font-themefont">Physical Impairment</span>지체장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-11" class="transition">
+                <h3 class="kiada-work-title">Tenement</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">FULL RADIUS DANCE</p>
+                  <p class="nation"><span class="font-themefont">The United States</span>미국</p>
+                  <p class="disable"><span class="font-themefont">Physical Impariment</span>지체장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-12" class="transition">
+                <h3 class="kiada-work-title">만남: 소나기</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">유선식</p>
+                  <p class="nation"><span class="font-themefont">South Korea</span>대한민국</p>
+                  <p class="disable"><span class="font-themefont">Brain Lesions</span>뇌병변장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-13" class="transition">
+                <h3 class="kiada-work-title">돋보기</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">김진호</p>
+                  <p class="nation"><span class="font-themefont">South Korea</span>대한민국</p>
+                  <p class="disable"><span class="font-themefont">Physical Impairment</span>지체장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-14" class="transition">
+                <h3 class="kiada-work-title">Keep Going</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">강성국</p>
+                  <p class="nation"><span class="font-themefont">South Korea</span>대한민국</p>
+                  <p class="disable"><span class="font-themefont">Brain Lesions</span>뇌병변장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-15" class="transition">
+                <h3 class="kiada-work-title">살풀이</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">김영민</p>
+                  <p class="nation"><span class="font-themefont">South Korea</span>대한민국</p>
+                  <p class="disable"><span class="font-themefont">Hearing Impairment</span>청각장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+            <li class="">
+              <a href="#work-2016-16" class="transition">
+                <h3 class="kiada-work-title">돌아가는 길</h3>
+                <div class="kiada-work-info transition">
+                  <p class="performer">김용우</p>
+                  <p class="nation"><span class="font-themefont">South Korea</span>대한민국</p>
+                  <p class="disable"><span class="font-themefont">Physical Impairment</span>지체장애</p>
+                </div>
+                <!-- .kiada-work-info -->
+              </a>
+            </li>
+          </ul>
+      
+      
+        </div>
+      
+        <!-- 사이드리스트 -->
+        <div class="history-items">
+         
+          <div class="history-item kiada-archive-item" id="work-2016-01">
+            <ul class="works-list">
+              <li class="reveal">
+                <img src="../images/2016/signal-1-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/signal-2-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/signal-3-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/signal-4-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-01-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-02">
+            <ul class="works-list">
+            <li class="reveal">
+              <img src="../images/2016/coexistence-1-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+            </li>
+            <li class="reveal">
+              <img src="../images/2016/coexistence-2-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+            </li>
+            <li class="reveal">
+              <img src="../images/2016/coexistence-3-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+            </li>
+            <li class="reveal">
+              <img src="../images/2016/coexistence-4-1920x2880.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+            </li>
+            <li class="reveal">
+              <img src="../images/2016/coexistence-5-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+            </li>
+          </ul>
+      
+          </div>
+          <!-- //work-2016-02-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-03">
+            <ul class="works-list">
+              <li class="reveal">
+                <img src="../images/2016/spring1-1920x2880.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/spring2-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/spring3-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-03-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-04">
+            <ul class="works-list">
+              <li class="reveal">
+                <img src="../images/2016/possibleDance-1-1-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/possibleDance-2-1-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/possibleDance-3-1-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-04-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-05">
+            <ul class="works-list">
+            <li class="reveal">
+              <img src="../images/2016/Helen-1.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+            </li>
+            <li class="reveal">
+              <img src="../images/2016/Helen-2.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+            </li>
+            <li class="reveal">
+              <img src="../images/2016/Helen-3.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+            </li>
+          </ul>
+      
+          </div>
+          <!-- //work-2016-05-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-06">
+            <ul class="works-list">
+              <li class="reveal">
+                <img src="../images/2016/Come-Come-1-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/Come-Come-2-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/Come-Come-3-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-06-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-07">
+            <ul class="works-list">
+              <li class="reveal">
+                <img src="../images/2016/Germany-1-1-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/Germany-2-1-1920x2880.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/Germany-3-1-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/Germany-4-1-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-07-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-08">
+            <ul class="works-list">
+              <li class="reveal">
+                <img src="../images/2016/japan1.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/japan2.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/japan3.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-08-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-09">
+            <ul class="works-list">
+              <li class="reveal">
+                <img width="1920" height="1280" src="../images/2016/Finland-1.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img width="1920" height="1280" src="../images/2016/Finland-2.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img width="1920" height="1280" src="../images/2016/Finland-3.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-09-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-10">
+            <ul class="works-list">
+              <li class="reveal">
+                <img width="1920" height="1280" src="../images/2016/spain1.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img width="1920" height="1280" src="../images/2016/spain2.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img width="1920" height="1280" src="../images/2016/spain3.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-10-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-11">
+            <ul class="works-list">
+              <li class="reveal">
+                <img src="../images/2016/USA1.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/USA2.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/USA3.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-11-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-12">
+            <ul class="works-list">
+              <li class="reveal">
+                <img src="../images/2016/meet-1-1920x2880.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/meet-2-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-12-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-13">
+            <ul class="works-list">
+              <li class="reveal">
+                <img src="../images/2016/Magnifying-1-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/Magnifying-2-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/Magnifying-3-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-13-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-14">
+            <ul class="works-list">
+              <li class="reveal">
+                <img src="../images/2016/Keep-Going_2-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/Keep-Going_3-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/Keep-Going_4-1920x2880.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/Keep-Going_1-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-14-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-15">
+              <ul class="works-list">
+                <li class="reveal">
+                  <img src="../images/2016/Salpuri-2-1920x2880.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+                </li>
+                <li class="reveal">
+                  <img src="../images/2016/Salpuri-1-1920x2880.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+                </li>
+              </ul>
+      
+          </div>
+          <!-- //work-2016-15-->
+      
+          <div class="history-item kiada-archive-item" id="work-2016-16">
+            <ul class="works-list">
+              <li class="reveal">
+                <img src="../images/2016/back-1-1920x2880.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/back-2-1920x1280.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+              <li class="reveal">
+                <img src="../images/2016/back-3-1920x2880.jpg" class="attachment-loco-archive-img size-loco-archive-img" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+              </li>
+            </ul>
+      
+          </div>
+          <!-- //work-2016-16-->
+      
+          
+        </div>
+      </section>
+      
+      
+      </div>
+      
+      <script src="../js/history.js"></script>
+      
+
+      <footer class="footer">
+        <div class="footer-wrap">
+          <div class="footer-left">
+            <div class="footer-organizer">
+              <p class="t01">대한민국장애인국제무용제 조직위원회</p>
+              <p class="t02">KIADA 사무국 서울시 마포구 성산로 144 403호</p>
+              <p class="t02">with.kiada@gmail.com</p>
+            </div>
+            <div class="copyright-txt t02"><p>&copy; 2022 KIADA All rights reserved</p></div>
+          </div>
+          <div class="footer-right">
+            <div class="sns">
+              <img src="../images/instagram.png" />
+              <img src="../images/facebook.png" />
+              <img src="../images/youtube.png" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+<script>
+  function addOver(id) {
+    if ($("#" + id).hasClass("over")) {
+      $("#" + id).removeClass("over");
+    } else {
+      $("#" + id).addClass("over");
+    }
+  }
+  $(".open_btn").click(function () {
+    if ($(".mobile-gnb").hasClass("hide")) {
+      $(".mobile-gnb").removeClass("hide");
+      $(".mobile-bg").removeClass("hide");
+    } else {
+      $(".mobile-gnb").addClass("hide");
+      $(".mobile-bg").addClass("hide");
+    }
+  });
+</script>

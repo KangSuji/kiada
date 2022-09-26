@@ -5,14 +5,14 @@ $(function () {
     event.preventDefault();
 
     $(".header").addClass("over");
-    $(".logo img").attr("src", "images/logo-kiada2020-white-1.svg");
+    $(".logo img").attr("src", "../images/logo-kiada2020-white-1.svg");
   });
 
   $(".gnb_wrap").on("mouseleave", function (event) {
     event.preventDefault();
 
     $(".header").removeClass("over");
-    $(".logo img").attr("src", "images/logo-kiada2020-green.svg");
+    $(".logo img").attr("src", "../images/logo-kiada2020-green.svg");
   });
   var rellax = new Rellax(".rellax");
 });
@@ -58,5 +58,58 @@ jQuery(function ($) {
     cssEase: "linear",
     nextArrow: $("#m-next"),
     prevArrow: $("#m-prev"),
+  });
+
+  //스크롤
+  $(document).scroll(function () {
+    scroll_pos = $(this).scrollTop();
+    if (scroll_pos > $(".history-item-wrap").offset().top) {
+      $(".nav-inner").css({ position: "fixed", left: "0px" });
+    }
+    if (scroll_pos < $(".history-item-wrap").offset().top) {
+      $(".nav-inner").css({ position: "absolute", left: "-72px" });
+    }
+  });
+  var item = $(".kiada-archive-item"),
+    nav = $("ul.kiada-archive-works-list");
+
+  $("ul.kiada-archive-works-list > li:first-child > a").addClass("active");
+
+  $(window).on("scroll", function () {
+    var cur_pos = $(this).scrollTop();
+    var item = $(".kiada-archive-item"),
+      nav = $("ul.kiada-archive-works-list");
+
+    item.each(function () {
+      var top = $(this).offset().top,
+        bottom = top + $(this).outerHeight();
+
+      if (cur_pos >= top && cur_pos <= bottom) {
+        nav.find("a").removeClass("active");
+        item.removeClass("active");
+
+        $(this).addClass("active");
+        nav.find('a[href="#' + $(this).attr("id") + '"]').addClass("active");
+      }
+    });
+  });
+  nav.find("a").on("click", function () {
+    var $el = $(this),
+      id = $el.attr("href");
+
+    $("html, body").animate(
+      {
+        scrollTop: $(id).offset().top + 1 + "px",
+      },
+      500
+    );
+
+    return false;
+  });
+  $(".timetable-btn").click(function () {
+    $(".history-modal").fadeIn("slow");
+  });
+  $(".btn-close").click(function () {
+    $(".history-modal").fadeOut("slow");
   });
 });
