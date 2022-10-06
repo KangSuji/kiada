@@ -9,4 +9,9 @@ jQuery(document).ready(function ($) {
       $(".stickyNav").css({ display: "block" });
     }
   });
+
+  $(".info-more-btn").click(function () {
+    $(this).prev(".program-right").css({ height: "auto" });
+    $(this).css({ display: "none" });
+  });
 });

@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
     <!-- font -->
     <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
     <link rel="stylesheet" href="../css/index.css" />
@@ -24,7 +26,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-    <script type="text/javascript" src="../js/index.js"></script>
+
     <script type="text/javascript" src="../js/sub.js"></script>
     <title>KIADA</title>
   </head>
@@ -32,8 +34,8 @@
     <div id="wrap">
       <div class="mobile-header">
         <div class="header-center">
-          <a href="javascript:void(0)" class="logo">
-            <img src="../images/Logo-m.png" />
+          <a href="/" class="logo">
+            <img src="../images/mo-logo.png" />
           </a>
           <span class="open_btn">
             <img src="../images/mobile menu.png" />
@@ -41,66 +43,72 @@
           <div class="mobile-gnb_wrap">
             <div class="mobile-gnb hide">
               <ul class="dep1">
-                <li id="about" onclick="addOver(id)">
-                  <a href="#" class="dep1_a">KIDA소개</a>
+                <li id="about">
+                  <a href="javascript:void(0)" class="dep1_a">KIADA소개<span class="lnr lnr-chevron-down"></span></a>
                   <ul class="dep2" style="margin: 0">
-                    <li><a href="#">개요</a></li>
-                    <li><a href="#">인사말</a></li>
-                    <li><a href="#">조직현황</a></li>
-                    <li><a href="#">함께하는 사람들</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub01/sub01.html">개요</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub01/sub02.html">인사말</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub01/sub03.html">조직현황</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub01/sub04.html">함께하는 사람들</a></li>
                   </ul>
                 </li>
-                <li id="show" onclick="addOver(id)">
-                  <a href="#" class="dep1_a"> 공연프로그램 </a>
+                <li id="show">
+                  <a href="javascript:void(0)" class="dep1_a"> 공연프로그램 <span class="lnr lnr-chevron-down"></span></a>
                   <ul class="dep2" style="margin: 0">
-                    <li><a href="#">공연개요</a></li>
-                    <li><a href="#">해외작</a></li>
-                    <li><a href="#">국내작</a></li>
-                    <li><a href="#">티켓예매</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub02/sub01.html">공연개요</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub02/sub02.html">해외작</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub02/sub03.html">국내작</a></li>
                   </ul>
                 </li>
-                <li id="show2" onclick="addOver(id)">
-                  <a href="#" class="dep1_a"> 부대프로그램 </a>
+                <li id="show2">
+                  <a href="javascript:void(0)" class="dep1_a"> 부대프로그램 <span class="lnr lnr-chevron-down"></span></a>
                   <ul class="dep2" style="margin: 0">
-                    <li><a href="#">행사일정</a></li>
-                    <li><a href="#">댄스워크숍</a></li>
-                    <li><a href="#">국제학술심포지엄</a></li>
-                    <li><a href="#">레지던시</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub03/sub01.html">행사개요</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub03/sub02.html">워크숍</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub03/sub03.html">국제포럼</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub03/sub04.html">프리레지던시</a></li>
                   </ul>
                 </li>
-                <li id="kiadas" onclick="addOver(id)">
-                  <a href="#" class="dep1_a">키아다즈</a>
+                <li id="contact">
+                  <a href="/sub02/sub04.html" class="dep1_a">티켓예매</a>
+                </li>
+                <li id="kiadas">
+                  <a href="javascript:void(0)" class="dep1_a">키아다즈<span class="lnr lnr-chevron-down"></span></a>
                   <ul class="dep2" style="margin: 0">
-                    <li><a href="#">키아다즈 소개</a></li>
-                    <li><a href="#">키아다즈 활동</a></li>
-                    <li><a href="#">공지사항</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub04/sub01.html">키아다즈 소개</a></li>
+                    <!--<li><a href="/sub04/sub02.html">키아다즈 활동</a></li>-->
                   </ul>
                 </li>
-                <li id="news" onclick="addOver(id)">
-                  <a href="#" class="dep1_a">소식</a>
+
+                <li id="news">
+                  <a href="javascript:void(0)" class="dep1_a" class="dep1_a">소식<span class="lnr lnr-chevron-down"></span></a>
                   <ul class="dep2" style="margin: 0">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">언론보도</a></li>
-                    <li><a href="#">갤러리</a></li>
-                    <li><a href="#">영상</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub05/sub01.html">공지사항</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub05/sub02.html">언론보도</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub05/sub03.html">갤러리</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="https://www.youtube.com/kiada" target="_blanck">영상</a></li>
                   </ul>
                 </li>
-                <li id="history" onclick="addOver(id)">
-                  <a href="#" class="dep1_a">HISTROY</a>
+
+                <li id="history">
+                  <a href="javascript:void(0)" class="dep1_a">아카이빙<span class="lnr lnr-chevron-down"></span></a>
                   <ul class="dep2" style="margin: 0">
-                    <li><a href="#">2021</a></li>
-                    <li><a href="#">2020</a></li>
-                    <li><a href="#">2019</a></li>
-                    <li><a href="#">2018</a></li>
-                    <li><a href="#">2017</a></li>
-                    <li><a href="#">2016</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub06/sub2021.html">2021</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub06/sub2020.html">2020</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub06/sub2019.html">2019</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub06/sub2018.html">2018</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub06/sub2017.html">2017</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub06/sub2016.html">2016</a></li>
                   </ul>
                 </li>
-                <li id="contact" onclick="addOver(id)">
-                  <a href="#" class="dep1_a">CONTACT US</a>
-                  <ul class="dep2" style="margin: 0">
-                    <li><a href="javascript:void(0)"></a></li>
-                  </ul>
+                <li id="contact">
+                  <a href="/sub07/sub01.html" class="dep1_a">문의하기</a>
+                </li>
+                <li id="contact">
+                  <!-- 영어버튼-->
+                  <a href="/mainEn.html" class="go-eng dep1_a" style="border: none; text-align: end">
+                    <span class="go-eng-btn">ENG</span>
+                  </a>
                 </li>
               </ul>
               <div class="mobile-bg hide"></div>
@@ -115,9 +123,13 @@
         <div class="header-center">
           <div class="gnb_wrap">
             <div class="gnb">
+              <!-- 영어버튼-->
+              <a href="/mainEn.html" class="go-eng">
+                <span class="go-eng-btn">ENG</span>
+              </a>
               <ul class="dep1">
                 <li>
-                  <a href="javascript:void(0)" class="logo">
+                  <a href="/" class="logo">
                     <img src="../images/logo-kiada2020-green.svg" class="logo-g" />
                   </a>
                   <ul class="dep2">
@@ -125,71 +137,66 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <a href="/sub01/sub01.html" class="dep1_a">KIADA소개</a>
                   <ul class="dep2">
-                    <li><a href="#">축제소개</a></li>
-                    <li><a href="#">인사말</a></li>
-                    <li><a href="#">조직현황</a></li>
-                    <li><a href="#">함께하는 사람들</a></li>
+                    <li><a href="/sub01/sub01.html">개요</a></li>
+                    <li><a href="/sub01/sub02.html">인사말</a></li>
+                    <li><a href="/sub01/sub03.html">조직현황</a></li>
+                    <li><a href="/sub01/sub04.html">함께하는 사람들</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">
-                    KIADA2022<br />
-                    공연
-                  </a>
+                  <a href="/sub02/sub01.html" class="dep1_a"> 공연 프로그램 </a>
                   <ul class="dep2">
-                    <li><a href="#">공연개요</a></li>
-                    <li><a href="#">참여작 소개</a></li>
-                    <li><a href="#">해외 초청작</a></li>
-                    <li>
-                      <a href="#">국내 기획 및 공모 선정작</a>
-                    </li>
-                    <li><a href="#">티켓예매</a></li>
+                    <li><a href="/sub02/sub01.html">공연개요</a></li>
+                    <li><a href="/sub02/sub02.html">해외작</a></li>
+                    <li><a href="/sub02/sub03.html">국내작</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">
-                    KIADA2022<br />
-                    프로그램
-                  </a>
+                  <a href="/sub03/sub01.html" class="dep1_a">부대 프로그램</a>
                   <ul class="dep2">
-                    <li><a href="#">행사일정</a></li>
-                    <li><a href="#">워크숍</a></li>
-                    <li><a href="#">심포지엄</a></li>
-                    <li><a href="#">레지던시</a></li>
+                    <li><a href="/sub03/sub01.html">행사개요</a></li>
+                    <li><a href="/sub03/sub02.html">워크숍</a></li>
+                    <li><a href="/sub03/sub03.html">국제포럼</a></li>
+                    <li><a href="/sub03/sub04.html">프리레지던시</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">키아다즈</a>
+                  <a href="/sub02/sub04.html" class="dep1_a">티켓예매</a>
                   <ul class="dep2">
-                    <li><a href="#">키아다즈 소개</a></li>
-                    <li><a href="#">키아다즈 활동</a></li>
-                    <li><a href="#">공지사항</a></li>
+                    <li><a href="/sub02/sub04.html">티켓예매</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">소식</a>
+                  <a href="/sub04/sub01.html" class="dep1_a">키아다즈</a>
                   <ul class="dep2">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">언론보도</a></li>
-                    <li><a href="#">갤러리</a></li>
-                    <li><a href="#">영상</a></li>
+                    <li><a href="/sub04/sub01.html">키아다즈 소개</a></li>
+                    <!--<li><a href="/sub04/sub02.html">키아다즈 활동</a></li> -->
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">아카이브</a>
+                  <a href="/sub05/sub01.html" class="dep1_a">소식</a>
                   <ul class="dep2">
-                    <li><a href="#">2021</a></li>
-                    <li><a href="#">2020</a></li>
-                    <li><a href="#">2019</a></li>
-                    <li><a href="#">2018</a></li>
-                    <li><a href="#">2017</a></li>
-                    <li><a href="#">2016</a></li>
+                    <li><a href="/sub05/sub01.html">공지사항</a></li>
+                    <li><a href="/sub05/sub02.html">언론보도</a></li>
+                    <li><a href="/sub05/sub03.html">갤러리</a></li>
+                    <li><a href="https://www.youtube.com/kiada" target="_blanck">영상</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">CONTACT US</a>
+                  <a href="/sub06/sub2021.html" class="dep1_a">아카이빙</a>
+                  <ul class="dep2">
+                    <li><a href="/sub06/sub2021.html">2021</a></li>
+                    <li><a href="/sub06/sub2020.html">2020</a></li>
+                    <li><a href="/sub06/sub2019.html">2019</a></li>
+                    <li><a href="/sub06/sub2018.html">2018</a></li>
+                    <li><a href="/sub06/sub2017.html">2017</a></li>
+                    <li><a href="/sub06/sub2016.html">2016</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/sub07/sub01.html" class="dep1_a">문의하기</a>
                 </li>
               </ul>
             </div>
@@ -209,12 +216,14 @@
           </ul>
         </nav>
         <section class="program-intro">
-          <div class="program-title">제7회 대한민국장애인국제무용제 KIADA2022</div>
+          <div class="program-title">
+            제7회 대한민국장애인<span class="yesBr"><br /></span>국제무용제 KIADA2022
+          </div>
           <div class="program-top orange">
             <div class="program-top-title">KIADA2022 워크숍</div>
             <div class="program-info-wrap">
               <div class="program-left">
-                <img src="../images/sub/w-poster01.png" class="program-poster" alt="포스터" />
+                <a href="/sub03/sub02.php"><img src="../images/sub/w-poster01.png" class="program-poster" alt="포스터" /></a>
               </div>
               <div class="program-right">
                 <p class="bold">주제</p>
@@ -224,8 +233,8 @@
                 <p>실바 라우카넨 Silva Laukanen</p>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">참여대상</p>
-                <p>· 장애 아동·청소년 25명과 무용수업 참여 가능한 보호자 1인</p>
-                <p>· 장애유형과 경중에 관계없이 누구나 참여 가능</p>
+                <p class="mo-margin-btm"><span class="noBr">·</span> 장애 아동·청소년 25명과 무용수업 참여 가능한 보호자 1인</p>
+                <p class="mo-margin-btm"><span class="noBr">·</span>장애유형과 경중에 관계없이 누구나 참여 가능</p>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">참여신청기간</p>
                 <p>2022년 09월 07일(수) ~ 10월 09일(일)까지&nbsp;&nbsp;<span class="dark">*선착순 마감 </span></p>
@@ -239,13 +248,17 @@
                 <p class="bold">장소</p>
                 <p>이음센터 5층 이음아트홀</p>
               </div>
+              <span class="info-more-btn">
+                <p>더보기</p>
+                <span class="lnr lnr-chevron-down"></span>
+              </span>
             </div>
           </div>
           <div class="program-top gray">
             <div class="program-top-title">KIADA2022 국제포럼</div>
             <div class="program-info-wrap">
               <div class="program-left">
-                <img src="../images/sub/w2-poster2.png" class="program-poster" alt="포스터" />
+                <a href="/sub03/sub03.php"><img src="../images/sub/w2-poster2.png" class="program-poster" alt="포스터" /></a>
               </div>
               <div class="program-right">
                 <p class="bold">주제</p>
@@ -266,70 +279,150 @@
                 <span class="margin-bottom-40"></span>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">참석신청기간</p>
-                <p>2022년 09월 23일(금) ~ 10월 24일(월)까지&nbsp;&nbsp;<span class="dark">*선착순 마감 </span></p>
+                <p>
+                  2022년 09월 23일(금) ~ <span class="yesBr"><br /></span>10월 24일(월)까지&nbsp;&nbsp;<span class="dark">*선착순 마감 </span>
+                </p>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">참석자 발표</p>
-                <p>2022년 10월 26일(수)&nbsp;&nbsp;<span class="dark">*참가 확정 개별 연락 </span></p>
+                <p>
+                  2022년 10월 26일(수)&nbsp;&nbsp;<span class="yesBr"><br /></span><span class="dark">*참가 확정 개별 연락 </span>
+                </p>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">일시</p>
-                <p>2022년 10월 31일(월) 오후 1시 ~ 오후 3시</p>
+                <p>
+                  2022년 10월 31일(월) <span class="yesBr"><br /></span>오후 1시 ~ 오후 3시
+                </p>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">장소</p>
                 <p>일산 킨텍스 제1전시장 207호</p>
               </div>
+              <span class="info-more-btn">
+                <p>더보기</p>
+                <span class="lnr lnr-chevron-down"></span>
+              </span>
             </div>
           </div>
           <div class="program-top bg-what">
             <div class="program-top-title white">KIADA2022 프리레지던시</div>
             <div class="program-info-wrap">
               <div class="program-left">
-                <img src="../images/sub/w-poster03.png" class="program-poster" alt="포스터" />
+                <a href="/sub03/sub04.php"><img src="../images/sub/w-poster03.png" class="program-poster" alt="포스터" /></a>
               </div>
               <div class="program-right">
                 <p class="bold">주제</p>
                 <p>파이파이(Pae Pae) 경계와 문턱</p>
-                <p>KIADA 2023 기획작을 위한 워크숍 및 참가자 선발 오디션</p>
+                <p>
+                  KIADA 2023 기획작을 위한 워크숍 및 참가자<span class="yesBr"><br /></span> 선발 오디션
+                </p>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">안무가</p>
                 <p>수잔 코완 Suzanne Cowan</p>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">참가대상</p>
                 <p><span class="dark">참가 자격</span></p>
-                <p>· 장애인 무용수</p>
-                <p>· 한국문화예술위원회(아르코) 연수단원, 전문인력 및 공연인력지원사업 경험자 &nbsp;&nbsp;우대</p>
-                <p>· 전국 규모의 경연대회 수상 경력자 우대</p>
-                <p>· 무용교육 경험 보유자 우대</p>
+                <p class="mo-margin-btm"><span class="noBr">·</span> 장애인 무용수</p>
+                <p class="mo-margin-btm"><span class="noBr">·</span>한국문화예술위원회(아르코) 연수단원, 전문인력 및 공연인력지원사업 경험자 <span class="noBr">&nbsp;&nbsp;</span>우대</p>
+                <p class="mo-margin-btm"><span class="noBr">·</span>전국 규모의 경연대회 수상 경력자 우대</p>
+                <p class="mo-margin-btm"><span class="noBr">·</span>무용교육 경험 보유자 우대</p>
                 <p><span class="dark">나이</span></p>
-                <p>· 특수학교(전문반 이상) ~ 만 50세 이하</p>
-                <p>· 성인 장애 무용수 15명과 워크숍 진행 후 오디션을 거쳐 최종 참가자 6명 선발</p>
-                <p>
-                  · 장애유형과 경중에 관계없이 오디션에 참여 가능하나, 프로그램 주제에 대한<br />
-                  &nbsp;&nbsp;이해를 갖고 안무가와 인지적 소통하며 창작작업을 진행할 수 있어야 함<br />
-                  &nbsp;&nbsp;(영어통역사 및 수어통역사 제공)
+                <p class="mo-margin-btm"><span class="noBr">·</span>특수학교(전문반 이상) ~ 만 50세 이하</p>
+                <p class="mo-margin-btm"><span class="noBr">·</span>성인 장애 무용수 15명과 워크숍 진행 후 오디션을 거쳐 최종 참가자 6명 선발</p>
+                <p class="mo-margin-btm">
+                  <span class="noBr">·</span>장애유형과 경중에 관계없이 오디션에 참여 가능하나, 프로그램 주제에 대한<span class="noBr"><br /></span> <span class="noBr">&nbsp;&nbsp;</span>이해를 갖고
+                  안무가와 인지적 소통하며 창작작업을 진행할 수 있어야 함<br />
+                  <span class="noBr">&nbsp;&nbsp;</span>(영어통역사 및 수어통역사 제공)
                 </p>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">참여신청기간</p>
-                <p>2022년 09월 06일(화) ~ 10월 09일(일)까지&nbsp;&nbsp;<span class="dark">*선착순 마감 </span></p>
+                <p>
+                  2022년 09월 06일(화) ~ <span class="yesBr"><br /></span>10월 09일(일)까지<span class="noBr">&nbsp;&nbsp;</span>&nbsp;<span class="dark">*선착순 마감 </span>
+                </p>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">참여자 발표</p>
-                <p>2022년 10월 11일(월) &nbsp;&nbsp;<span class="dark">*참가 확정 개별 연락 </span></p>
+                <p>2022년 10월 11일(월) <span class="noBr">&nbsp;&nbsp;</span><span class="dark">*참가 확정 개별 연락 </span></p>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">일시</p>
-                <p>2022년 11월 7일(월) ~ 11월 9일(수) 오전 10시 ~ 오후 4시</p>
+                <p>
+                  2022년 11월 7일(월) ~ 11월 9일(수) <span class="yesBr"><br /></span>오전 10시 ~ 오후 4시
+                </p>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">선발 오디션</p>
-                <p>2022년 11월 9일(수) 오후 1시 ~ 4시</p>
+                <p>
+                  2022년 11월 9일(수)<span class="yesBr"><br /></span> 오후 1시 ~ 4시
+                </p>
                 <span class="margin-bottom-40"></span>
                 <p class="bold">장소</p>
                 <p>서울무용센터 스튜디오 블랙</p>
               </div>
+              <span class="info-more-btn">
+                <p>더보기</p>
+                <span class="lnr lnr-chevron-down"></span>
+              </span>
             </div>
           </div>
         </section>
       </div>
 
       <script src="../js/sub.js"></script>
-
+      <div class="kiada-support">
+        <div class="support-wrap">
+          <ul>
+            <li>
+              <div class="support-title">주최 SUPERVISION</div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-supervision.svg" />
+              </a>
+            </li>
+            <li class="left-111">
+              <div class="support-title">주관 SPONSORSHIP</div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-organizer.svg" />
+              </a>
+            </li>
+            <li class="dummy">
+              <img src="../images/sec03_dummy.png" />
+            </li>
+            <li class="dummy">
+              <img src="../images/sec03_dummy.png" />
+            </li>
+          </ul>
+        </div>
+        <div class="support-wrap" style="margin-top: 50px">
+          <ul style="align-items: center">
+            <li>
+              <div class="support-title">후원 SUPPORT</div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-sponsor-1.svg" />
+              </a>
+            </li>
+            <li>
+              <div class="support-title dummy"></div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-sponsor-2.svg" />
+              </a>
+            </li>
+            <li>
+              <div class="support-title dummy"></div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-sponsor-3.svg" />
+              </a>
+            </li>
+            <li>
+              <div class="support-title dummy"></div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-sponsor-4.svg" />
+              </a>
+            </li>
+            <li>
+              <div class="support-title dummy"></div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-sponsor-5.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- //support -->
       <footer class="footer">
         <div class="footer-wrap">
           <div class="footer-left">
@@ -350,23 +443,43 @@
         </div>
       </footer>
     </div>
+    <script>
+      $(".dep1 .dep1_a").click(function () {
+        $(".lnr-chevron-up").attr("class", "lnr lnr-chevron-down");
+        $(".dep2").hide();
+        $(this).next(".dep2").slideToggle();
+        $(this).children("span").attr("class", "lnr lnr-chevron-up");
+      });
+
+      $(".open_btn").click(function () {
+        if ($(".mobile-gnb").hasClass("hide")) {
+          $(".mobile-gnb").removeClass("hide");
+          $(".mobile-bg").removeClass("hide");
+        } else {
+          $(".dep2").hide();
+          $(".mobile-gnb").addClass("hide");
+          $(".mobile-bg").addClass("hide");
+          $(".dep1 > li").removeClass("over");
+        }
+      });
+      $(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 500) {
+            $(".goTopBtn").fadeIn();
+          } else {
+            $(".goTopBtn").fadeOut();
+          }
+        });
+        $(".goTopBtn").click(function () {
+          $("html, body").animate(
+            {
+              scrollTop: 0,
+            },
+            400
+          );
+          return false;
+        });
+      });
+    </script>
   </body>
 </html>
-<script>
-  function addOver(id) {
-    if ($("#" + id).hasClass("over")) {
-      $("#" + id).removeClass("over");
-    } else {
-      $("#" + id).addClass("over");
-    }
-  }
-  $(".open_btn").click(function () {
-    if ($(".mobile-gnb").hasClass("hide")) {
-      $(".mobile-gnb").removeClass("hide");
-      $(".mobile-bg").removeClass("hide");
-    } else {
-      $(".mobile-gnb").addClass("hide");
-      $(".mobile-bg").addClass("hide");
-    }
-  });
-</script>

@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
     <!-- font -->
     <link rel="stylesheet" id="loco-fonts-worksans-css" href="https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40100%3B900&#038;display=swap&#038;ver=0.0.1" type="text/css" media="all" />
     <link rel="stylesheet" href="css/index.css" />
@@ -23,7 +25,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-    <script type="text/javascript" src="js/index.js"></script>
+    <!-- <script type="text/javascript" src="js/index.js"></script> -->
     <script type="text/javascript" src="js/main.js"></script>
     <title>KIADA</title>
   </head>
@@ -31,75 +33,81 @@
     <div id="wrap">
       <div class="mobile-header">
         <div class="header-center">
-          <a href="javascript:void(0)" class="logo">
-            <img src="./images/Logo-m.png" />
+          <a href="/" class="logo">
+            <img src="../images/mo-logo.png" />
           </a>
           <span class="open_btn">
-            <img src="./images/mobile menu.png" />
+            <img src="../images/mobile menu.png" />
           </span>
           <div class="mobile-gnb_wrap">
             <div class="mobile-gnb hide">
               <ul class="dep1">
-                <li id="about" onclick="addOver(id)">
-                  <a href="#" class="dep1_a">KIDA소개</a>
+                <li id="about">
+                  <a href="javascript:void(0)" class="dep1_a">KIADA소개<span class="lnr lnr-chevron-down"></span></a>
                   <ul class="dep2" style="margin: 0">
-                    <li><a href="#">개요</a></li>
-                    <li><a href="#">인사말</a></li>
-                    <li><a href="#">조직현황</a></li>
-                    <li><a href="#">함께하는 사람들</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub01/sub01.html">개요</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub01/sub02.html">인사말</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub01/sub03.html">조직현황</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub01/sub04.html">함께하는 사람들</a></li>
                   </ul>
                 </li>
-                <li id="show" onclick="addOver(id)">
-                  <a href="#" class="dep1_a"> 공연프로그램 </a>
+                <li id="show">
+                  <a href="javascript:void(0)" class="dep1_a"> 공연프로그램 <span class="lnr lnr-chevron-down"></span></a>
                   <ul class="dep2" style="margin: 0">
-                    <li><a href="#">공연개요</a></li>
-                    <li><a href="#">해외작</a></li>
-                    <li><a href="#">국내작</a></li>
-                    <li><a href="#">티켓예매</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub02/sub01.html">공연개요</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub02/sub02.html">해외작</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub02/sub03.html">국내작</a></li>
                   </ul>
                 </li>
-                <li id="show2" onclick="addOver(id)">
-                  <a href="#" class="dep1_a"> 부대프로그램 </a>
+                <li id="show2">
+                  <a href="javascript:void(0)" class="dep1_a"> 부대프로그램 <span class="lnr lnr-chevron-down"></span></a>
                   <ul class="dep2" style="margin: 0">
-                    <li><a href="#">행사일정</a></li>
-                    <li><a href="#">댄스워크숍</a></li>
-                    <li><a href="#">국제학술심포지엄</a></li>
-                    <li><a href="#">레지던시</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub03/sub01.html">행사개요</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub03/sub02.html">워크숍</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub03/sub03.html">국제포럼</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub03/sub04.html">프리레지던시</a></li>
                   </ul>
                 </li>
-                <li id="kiadas" onclick="addOver(id)">
-                  <a href="#" class="dep1_a">키아다즈</a>
+                <li id="contact">
+                  <a href="/sub02/sub04.html" class="dep1_a">티켓예매</a>
+                </li>
+                <li id="kiadas">
+                  <a href="javascript:void(0)" class="dep1_a">키아다즈<span class="lnr lnr-chevron-down"></span></a>
                   <ul class="dep2" style="margin: 0">
-                    <li><a href="#">키아다즈 소개</a></li>
-                    <li><a href="#">키아다즈 활동</a></li>
-                    <li><a href="#">공지사항</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub04/sub01.html">키아다즈 소개</a></li>
+                    <!--<li><a href="/sub04/sub02.html">키아다즈 활동</a></li>-->
                   </ul>
                 </li>
-                <li id="news" onclick="addOver(id)">
-                  <a href="#" class="dep1_a">소식</a>
+
+                <li id="news">
+                  <a href="javascript:void(0)" class="dep1_a" class="dep1_a">소식<span class="lnr lnr-chevron-down"></span></a>
                   <ul class="dep2" style="margin: 0">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">언론보도</a></li>
-                    <li><a href="#">갤러리</a></li>
-                    <li><a href="#">영상</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub05/sub01.html">공지사항</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub05/sub02.html">언론보도</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub05/sub03.html">갤러리</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="https://www.youtube.com/kiada" target="_blanck">영상</a></li>
                   </ul>
                 </li>
-                <li id="history" onclick="addOver(id)">
-                  <a href="#" class="dep1_a">HISTROY</a>
+
+                <li id="history">
+                  <a href="javascript:void(0)" class="dep1_a">아카이빙<span class="lnr lnr-chevron-down"></span></a>
                   <ul class="dep2" style="margin: 0">
-                    <li><a href="#">2021</a></li>
-                    <li><a href="#">2020</a></li>
-                    <li><a href="#">2019</a></li>
-                    <li><a href="#">2018</a></li>
-                    <li><a href="#">2017</a></li>
-                    <li><a href="#">2016</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub06/sub2021.html">2021</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub06/sub2020.html">2020</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub06/sub2019.html">2019</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub06/sub2018.html">2018</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub06/sub2017.html">2017</a></li>
+                    <li><img src="../images/nav-active.svg" /><a href="/sub06/sub2016.html">2016</a></li>
                   </ul>
                 </li>
-                <li id="contact" onclick="addOver(id)">
-                  <a href="#" class="dep1_a">CONTACT US</a>
-                  <ul class="dep2" style="margin: 0">
-                    <li><a href="javascript:void(0)"></a></li>
-                  </ul>
+                <li id="contact">
+                  <a href="/sub07/sub01.html" class="dep1_a">문의하기</a>
+                </li>
+                <li id="contact">
+                  <!-- 영어버튼-->
+                  <a href="/mainEn.html" class="go-eng dep1_a" style="border: none; text-align: end">
+                    <span class="go-eng-btn">ENG</span>
+                  </a>
                 </li>
               </ul>
               <div class="mobile-bg hide"></div>
@@ -114,81 +122,80 @@
         <div class="header-center">
           <div class="gnb_wrap">
             <div class="gnb">
+              <!-- 영어버튼-->
+              <a href="/mainEn.html" class="go-eng">
+                <span class="go-eng-btn">ENG</span>
+              </a>
               <ul class="dep1">
                 <li>
-                  <a href="javascript:void(0)" class="logo">
-                    <img src="images/logo-kiada2020-green.svg" class="logo-g" />
+                  <a href="/" class="logo">
+                    <img src="../images/logo-kiada2020-green.svg" class="logo-g" />
                   </a>
                   <ul class="dep2">
                     <li><a href="javascript:void(0)"></a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">KIDA소개</a>
+                  <a href="/sub01/sub01.html" class="dep1_a">KIADA소개</a>
                   <ul class="dep2">
-                    <li><a href="#">축제소개</a></li>
-                    <li><a href="#">인사말</a></li>
-                    <li><a href="#">조직현황</a></li>
-                    <li><a href="#">함께하는 사람들</a></li>
+                    <li><a href="/sub01/sub01.html">개요</a></li>
+                    <li><a href="/sub01/sub02.html">인사말</a></li>
+                    <li><a href="/sub01/sub03.html">조직현황</a></li>
+                    <li><a href="/sub01/sub04.html">함께하는 사람들</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">
-                    KIADA2022<br />
-                    공연
-                  </a>
+                  <a href="/sub02/sub01.html" class="dep1_a"> 공연 프로그램 </a>
                   <ul class="dep2">
-                    <li><a href="#">공연개요</a></li>
-                    <li><a href="#">참여작 소개</a></li>
-                    <li><a href="#">해외 초청작</a></li>
-                    <li>
-                      <a href="#">국내 기획 및 공모 선정작</a>
-                    </li>
-                    <li><a href="#">티켓예매</a></li>
+                    <li><a href="/sub02/sub01.html">공연개요</a></li>
+                    <li><a href="/sub02/sub02.html">해외작</a></li>
+                    <li><a href="/sub02/sub03.html">국내작</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">
-                    KIADA2022<br />
-                    프로그램
-                  </a>
+                  <a href="/sub03/sub01.html" class="dep1_a">부대 프로그램</a>
                   <ul class="dep2">
-                    <li><a href="#">행사일정</a></li>
-                    <li><a href="#">워크숍</a></li>
-                    <li><a href="#">심포지엄</a></li>
-                    <li><a href="#">레지던시</a></li>
+                    <li><a href="/sub03/sub01.html">행사개요</a></li>
+                    <li><a href="/sub03/sub02.html">워크숍</a></li>
+                    <li><a href="/sub03/sub03.html">국제포럼</a></li>
+                    <li><a href="/sub03/sub04.html">프리레지던시</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">키아다즈</a>
+                  <a href="/sub02/sub04.html" class="dep1_a">티켓예매</a>
                   <ul class="dep2">
-                    <li><a href="#">키아다즈 소개</a></li>
-                    <li><a href="#">키아다즈 활동</a></li>
-                    <li><a href="#">공지사항</a></li>
+                    <li><a href="/sub02/sub04.html">티켓예매</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">소식</a>
+                  <a href="/sub04/sub01.html" class="dep1_a">키아다즈</a>
                   <ul class="dep2">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">언론보도</a></li>
-                    <li><a href="#">갤러리</a></li>
-                    <li><a href="#">영상</a></li>
+                    <li><a href="/sub04/sub01.html">키아다즈 소개</a></li>
+                    <!--<li><a href="/sub04/sub02.html">키아다즈 활동</a></li> -->
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">아카이브</a>
+                  <a href="/sub05/sub01.html" class="dep1_a">소식</a>
                   <ul class="dep2">
-                    <li><a href="#">2021</a></li>
-                    <li><a href="#">2020</a></li>
-                    <li><a href="#">2019</a></li>
-                    <li><a href="#">2018</a></li>
-                    <li><a href="#">2017</a></li>
-                    <li><a href="#">2016</a></li>
+                    <li><a href="/sub05/sub01.html">공지사항</a></li>
+                    <li><a href="/sub05/sub02.html">언론보도</a></li>
+                    <li><a href="/sub05/sub03.html">갤러리</a></li>
+                    <li><a href="https://www.youtube.com/kiada" target="_blanck">영상</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="dep1_a">CONTACT US</a>
+                  <a href="/sub06/sub2021.html" class="dep1_a">아카이빙</a>
+                  <ul class="dep2">
+                    <li><a href="/sub06/sub2021.html">2021</a></li>
+                    <li><a href="/sub06/sub2020.html">2020</a></li>
+                    <li><a href="/sub06/sub2019.html">2019</a></li>
+                    <li><a href="/sub06/sub2018.html">2018</a></li>
+                    <li><a href="/sub06/sub2017.html">2017</a></li>
+                    <li><a href="/sub06/sub2016.html">2016</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/sub07/sub01.html" class="dep1_a">문의하기</a>
                 </li>
               </ul>
             </div>
@@ -204,7 +211,7 @@
           <img src="images/fron.png" class="front2 rellax" data-rellax-speed="-0.4" />
           <img src="./images/font-back03.png" class="back rellax" data-rellax-speed="2" />
         </div>
-       <!-- 모바일 메인 -->
+        <!-- 모바일 메인 -->
         <div class="mo-main">
           <section class="m-main1">
             <img src="images/main_3.svg" class="mo-front1" />
@@ -227,183 +234,177 @@
         </div>
         <!-- //main-visual -->
 
-	
-		
         <div class="slide" data-aos="zoom-in">
           <div class="slick-slide-wrap pc-slick">
-				
-					<a href="/sub02/sub03.html#go14">
-            <div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/kr.png" />korea</span>
+            <a href="/sub02/sub03.html#go14">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/kr.png" />korea</span>
+                  </div>
+                  <div class="slide-text-tit">무감어수(無鑒於水)</div>
+                  <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
                 </div>
-                <div class="slide-text-tit">무감어수(無鑒於水)</div>
-                <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
+                <img src="images/Exclude2.png" class="slide-img simg01" />
               </div>
-              <img src="images/Exclude2.png" class="slide-img simg01" />
-            </div>
-						</a>     
-						
-						<a href="/sub02/sub03.html#go08">
-            <div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/kr.png" />korea</span>
-                </div>
-                <div class="slide-text-tit">끝...시작을 부르다3</div>
-                <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
-              </div>
-              <img src="images/Exclude2.png" class="slide-img simg02" />
-            </div>
-						</a>
+            </a>
 
-						<a href="/sub02/sub03.html#go10">
-            <div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/kr.png" />korea</span>
+            <a href="/sub02/sub03.html#go08">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/kr.png" />korea</span>
+                  </div>
+                  <div class="slide-text-tit">끝...시작을 부르다3</div>
+                  <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
                 </div>
-                <div class="slide-text-tit">약속; 관계하다</div>
-                <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
+                <img src="images/Exclude2.png" class="slide-img simg02" />
               </div>
-              <img src="images/Exclude2.png" class="slide-img simg03" />
-            </div>
-						</a>
+            </a>
 
-					<a href="/sub02/sub03.html#go11">
-            <div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/kr.png" />korea</span>
+            <a href="/sub02/sub03.html#go10">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/kr.png" />korea</span>
+                  </div>
+                  <div class="slide-text-tit">약속; 관계하다</div>
+                  <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
                 </div>
-                <div class="slide-text-tit">세 사람의 이야기</div>
-                <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
+                <img src="images/Exclude2.png" class="slide-img simg03" />
               </div>
-              <img src="images/Exclude2.png" class="slide-img simg04" />
-            </div>
-					</a>
+            </a>
 
-					<a href="/sub02/sub03.html#go12">
-            <div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/kr.png" />korea</span>
+            <a href="/sub02/sub03.html#go11">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/kr.png" />korea</span>
+                  </div>
+                  <div class="slide-text-tit">세 사람의 이야기</div>
+                  <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
                 </div>
-                <div class="slide-text-tit">안개</div>
-                <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
+                <img src="images/Exclude2.png" class="slide-img simg04" />
               </div>
-              <img src="images/Exclude2.png" class="slide-img simg05" />
-            </div>
-						</a>
+            </a>
 
-					<a href="/sub02/sub03.html#go13">
-            <div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/kr.png" />korea</span>
+            <a href="/sub02/sub03.html#go12">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/kr.png" />korea</span>
+                  </div>
+                  <div class="slide-text-tit">안개</div>
+                  <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
                 </div>
-                <div class="slide-text-tit">기후위기</div>
-                <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
+                <img src="images/Exclude2.png" class="slide-img simg05" />
               </div>
-              <img src="images/Exclude2.png" class="slide-img simg06" />
-            </div>
-					</a>
+            </a>
 
-					<a href="/sub02/sub03.html#go09">
-            <div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/kr.png" />korea</span>
+            <a href="/sub02/sub03.html#go13">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/kr.png" />korea</span>
+                  </div>
+                  <div class="slide-text-tit">기후위기</div>
+                  <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
                 </div>
-                <div class="slide-text-tit">가능한 춤 2022</div>
-                <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
+                <img src="images/Exclude2.png" class="slide-img simg06" />
               </div>
-              <img src="images/Exclude2.png" class="slide-img simg07" />
-            </div>
-					</a>
-					<a href="/sub02/sub03.html#go05">
-						<div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/kr.png" />korea</span>
+            </a>
+
+            <a href="/sub02/sub03.html#go09">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/kr.png" />korea</span>
+                  </div>
+                  <div class="slide-text-tit">가능한 춤 2022</div>
+                  <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
                 </div>
-                <div class="slide-text-tit">접는 법</div>
-                <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
+                <img src="images/Exclude2.png" class="slide-img simg07" />
               </div>
-              <img src="images/Exclude2.png" class="slide-img simg08" />
-            </div>
-						</a>
-
-					<a href="/sub02/sub03.html#go07">
-            <div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/kr.png" />korea</span>
+            </a>
+            <a href="/sub02/sub03.html#go05">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/kr.png" />korea</span>
+                  </div>
+                  <div class="slide-text-tit">접는 법</div>
+                  <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
                 </div>
-                <div class="slide-text-tit">우리가 원하는</div>
-                <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
+                <img src="images/Exclude2.png" class="slide-img simg08" />
               </div>
-              <img src="images/Exclude2.png" class="slide-img simg09" />
-            </div>
-					</a>
+            </a>
 
-					<a href="/sub02/sub03.html#go06">
-            <div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/kr.png" />korea</span>
+            <a href="/sub02/sub03.html#go07">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/kr.png" />korea</span>
+                  </div>
+                  <div class="slide-text-tit">우리가 원하는</div>
+                  <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
                 </div>
-                <div class="slide-text-tit">펑크 메신저</div>
-                <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
+                <img src="images/Exclude2.png" class="slide-img simg09" />
               </div>
-              <img src="images/Exclude2.png" class="slide-img simg10" />
-            </div>
-					</a>
+            </a>
 
-					<a href="/sub02/sub03.html#go04">
-						<div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/sp.png" />spain</span>
+            <a href="/sub02/sub03.html#go06">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/kr.png" />korea</span>
+                  </div>
+                  <div class="slide-text-tit">펑크 메신저</div>
+                  <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
                 </div>
-                <div class="slide-text-tit">SOY TODO EL MUNDO</div>
-                <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
+                <img src="images/Exclude2.png" class="slide-img simg10" />
               </div>
-              <img src="images/Exclude2.png" class="slide-img simg11" />
-            </div>
-					</a>
+            </a>
 
-
-					<a href="/sub02/sub02.html#go01">
-            <div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/ca.png" />canada</span>
+            <a href="/sub02/sub03.html#go04">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/sp.png" />spain</span>
+                  </div>
+                  <div class="slide-text-tit">SOY TODO EL MUNDO</div>
+                  <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
                 </div>
-                <div class="slide-text-tit">THE WORLD AT OUR FEET</div>
-                <div class="slide-text-txt">22. 11. 2. 19:30 →</div>
+                <img src="images/Exclude2.png" class="slide-img simg11" />
               </div>
-              <img src="images/Exclude2.png" class="slide-img simg12" />
-            </div>
-					</a>
+            </a>
 
-
-					<a href="/sub02/sub02.html#go02">
-            <div class="slide-img-wrap">
-              <div class="slide-text">
-								<div class="slick-country-wrap">
-                  <span><img src="./images/sub/ls.png" />Israel</span>
+            <a href="/sub02/sub02.html#go01">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/ca.png" />canada</span>
+                  </div>
+                  <div class="slide-text-tit">THE WORLD AT OUR FEET</div>
+                  <div class="slide-text-txt">22. 11. 2. 19:30 →</div>
                 </div>
-                <div class="slide-text-tit">11,711 STONE STEPS AT NIKKO</div>
-                <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
+                <img src="images/Exclude2.png" class="slide-img simg12" />
               </div>
-              <img src="images/Exclude2.png" class="slide-img simg13" />
-            </div>
+            </a>
+
+            <a href="/sub02/sub02.html#go02">
+              <div class="slide-img-wrap">
+                <div class="slide-text">
+                  <div class="slick-country-wrap">
+                    <span><img src="./images/sub/ls.png" />Israel</span>
+                  </div>
+                  <div class="slide-text-tit">11,711 STONE STEPS AT NIKKO</div>
+                  <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
+                </div>
+                <img src="images/Exclude2.png" class="slide-img simg13" />
+              </div>
+            </a>
           </div>
-				</a>
-
-
+          <!-- pc slick -->
           <div class="prevArrWrap">
             <img src="./images/Slide-Arw-prev.png" id="prev" />
           </div>
@@ -412,138 +413,138 @@
           </div>
 
           <!-- 모바일 slick -->
-				 
+
           <div class="mo-slick">
-						<a href="/sub02/sub03.html#go14">
-							<div class="m-slide-img-wrap">
-								<div class="m-slide-text">								
-									<div class="slide-text-tit">무감어수(無鑒於水)</div>
-									<div class="slide-text-txt">22. 11. 6. 16:00 →</div>
-								</div>
-								<div class="slide-img simg01"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-							</div>
-						</a>
-
-					 <a href="/sub02/sub03.html#go08">
-            <div class="m-slide-img-wrap">
-              <div class="m-slide-text">
-                <div class="slide-text-tit">끝...시작을 부르다3</div>
-                <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
+            <a href="/sub02/sub03.html#go14">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">무감어수(無鑒於水)</div>
+                  <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
+                </div>
+                <div class="slide-img simg01"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
               </div>
-              <div class="slide-img simg02"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-            </div>
-						</a>
+            </a>
 
-						 <a href="/sub02/sub03.html#go10">
-            <div class="m-slide-img-wrap">
-              <div class="m-slide-text">
-                <div class="slide-text-tit">약속; 관계하다</div>
-                <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
+            <a href="/sub02/sub03.html#go08">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">끝...시작을 부르다3</div>
+                  <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
+                </div>
+                <div class="slide-img simg02"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
               </div>
-              <div class="slide-img simg03"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-            </div>
-						</a>
+            </a>
 
-						<a href="/sub02/sub03.html#go11">
-            <div class="m-slide-img-wrap">
-              <div class="m-slide-text">
-                <div class="slide-text-tit">세 사람의 이야기</div>
-                <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
+            <a href="/sub02/sub03.html#go10">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">약속; 관계하다</div>
+                  <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
+                </div>
+                <div class="slide-img simg03"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
               </div>
-              <div class="slide-img simg04"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-            </div>
-						</a>
+            </a>
 
-						<a href="/sub02/sub03.html#go12">
-            <div class="m-slide-img-wrap">
-              <div class="m-slide-text">
-                <div class="slide-text-tit">안개</div>
-                <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
+            <a href="/sub02/sub03.html#go11">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">세 사람의 이야기</div>
+                  <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
+                </div>
+                <div class="slide-img simg04"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
               </div>
-              <div class="slide-img simg05"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-            </div>
-						</a>
+            </a>
 
-						<a href="/sub02/sub03.html#go13">
-            <div class="m-slide-img-wrap">
-              <div class="m-slide-text">
-                <div class="slide-text-tit">기후위기</div>
-                <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
+            <a href="/sub02/sub03.html#go12">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">안개</div>
+                  <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
+                </div>
+                <div class="slide-img simg05"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
               </div>
-              <div class="slide-img simg06"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-            </div>
-						</a>
+            </a>
 
-						<a href="/sub02/sub03.html#go09">
-            <div class="m-slide-img-wrap">
-              <div class="m-slide-text">
-                <div class="slide-text-tit">가능한 춤 2022</div>
-                <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
+            <a href="/sub02/sub03.html#go13">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">기후위기</div>
+                  <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
+                </div>
+                <div class="slide-img simg06"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
               </div>
-              <div class="slide-img simg07"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-            </div>
-						</a>
+            </a>
 
-						<a href="/sub02/sub03.html#go05">
-            <div class="m-slide-img-wrap">
-              <div class="m-slide-text">
-                <div class="slide-text-tit">접는 법</div>
-                <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
+            <a href="/sub02/sub03.html#go09">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">가능한 춤 2022</div>
+                  <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
+                </div>
+                <div class="slide-img simg07"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
               </div>
-              <div class="slide-img simg08"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-            </div>
-						</a>
+            </a>
 
-						<a href="/sub02/sub03.html#go07">
-            <div class="m-slide-img-wrap">
-              <div class="m-slide-text">
-                <div class="slide-text-tit">우리가 원하는</div>
-                <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
+            <a href="/sub02/sub03.html#go05">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">접는 법</div>
+                  <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
+                </div>
+                <div class="slide-img simg08"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
               </div>
-              <div class="slide-img simg09"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-            </div>
-						</a>
+            </a>
 
-						<a href="/sub02/sub03.html#go06">
-            <div class="m-slide-img-wrap">
-              <div class="m-slide-text">
-                <div class="slide-text-tit">펑크 메신저</div>
-                <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
+            <a href="/sub02/sub03.html#go07">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">우리가 원하는</div>
+                  <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
+                </div>
+                <div class="slide-img simg09"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
               </div>
-              <div class="slide-img simg10"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-            </div>
-						</a>
+            </a>
 
-						<a href="/sub02/sub03.html#go04">
-            <div class="m-slide-img-wrap">
-              <div class="m-slide-text">
-                <div class="slide-text-tit">SOY TODO EL MUNDO</div>
-                <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
+            <a href="/sub02/sub03.html#go06">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">펑크 메신저</div>
+                  <div class="slide-text-txt">22. 11. 5. 16:00 →</div>
+                </div>
+                <div class="slide-img simg10"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
               </div>
-              <div class="slide-img simg11"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-            </div>
-						</a>
+            </a>
 
-					<a href="/sub02/sub02.html#go01">
-            <div class="m-slide-img-wrap">
-              <div class="m-slide-text">
-                <div class="slide-text-tit">THE WORLD AT OUR FEET</div>
-                <div class="slide-text-txt">22. 11. 2. 19:30 →</div>
+            <a href="/sub02/sub03.html#go04">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">SOY TODO EL MUNDO</div>
+                  <div class="slide-text-txt">22. 11. 6. 16:00 →</div>
+                </div>
+                <div class="slide-img simg11"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
               </div>
-              <div class="slide-img simg12"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-            </div>
-						</a>
+            </a>
 
-					<a href="/sub02/sub02.html#go02">
-            <div class="m-slide-img-wrap">
-              <div class="m-slide-text">
-                <div class="slide-text-tit">11,711 STONE STEPS AT NIKKO</div>
-                <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
+            <a href="/sub02/sub02.html#go01">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">THE WORLD AT OUR FEET</div>
+                  <div class="slide-text-txt">22. 11. 2. 19:30 →</div>
+                </div>
+                <div class="slide-img simg12"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
               </div>
-              <div class="slide-img simg13"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
-            </div>
+            </a>
+
+            <a href="/sub02/sub02.html#go02">
+              <div class="m-slide-img-wrap">
+                <div class="m-slide-text">
+                  <div class="slide-text-tit">11,711 STONE STEPS AT NIKKO</div>
+                  <div class="slide-text-txt">22. 11. 3. 19:30 →</div>
+                </div>
+                <div class="slide-img simg13"><img src="images/tosel.jpg" class="mo-slide-img" style="visibility: hidden" /></div>
+              </div>
+            </a>
           </div>
-					</a>
           <div class="m-prevArrWrap">
             <img src="./images/Slide-Arw-prev.png" id="m-prev" />
           </div>
@@ -551,9 +552,8 @@
             <img src="./images/Slide-Arw-next.png" id="m-next" />
           </div>
         </div>
-
         <!-- // slide -->
-			
+
         <div class="kiada-link">
           <div class="link-text">
             <div class="link-text-tit">Korea International Accessible Dance Festival 2022</div>
@@ -564,9 +564,11 @@
             <a href="/sub03/sub01.html"><img src="images/link-2.png" data-aos="zoom-in" /></a>
             <a href="/sub05/sub01.html"><img src="images/link-3.png" data-aos="zoom-in" /></a>
           </div>
-					<style>
-						.link-box a img { width: 100%;}
-					</style>
+          <style>
+            .link-box a img {
+              width: 100%;
+            }
+          </style>
           <div class="m-link-box">
             <img src="images/m-link1.svg" />
             <img src="images/m-link2.svg" />
@@ -575,50 +577,60 @@
         </div>
         <!-- //kida-link -->
 
-				
-				<!-- vod -->
+        <!-- vod -->
         <div class="kiada-vod">
-          <div class="vod-wrap" id="vod-1">            
-					<iframe width="1475" height="823" src="https://www.youtube.com/embed/yFJTDEuBwYI?controls=0&autoplay=1&mute=1&loop=1&playlist=yFJTDEuBwYI" 
-					title="YouTube video player" frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<!-- <iframe width="1475" height="823" src="https://www.youtube.com/embed/yFJTDEuBwYI" 
+          <div class="vod-wrap" id="vod-1">
+            <iframe
+              width="1475"
+              height="823"
+              src="https://www.youtube.com/embed/yFJTDEuBwYI?controls=0&autoplay=1&mute=1&loop=1&playlist=yFJTDEuBwYI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <!-- <iframe width="1475" height="823" src="https://www.youtube.com/embed/yFJTDEuBwYI" 
 						title="[KIADA2022] TEASER 티저 영상 ㅣ 제7회 대한민국장애인국제무용제" 
 						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
             <div class="vod-title">Teaser</div>
-          </div>          
+          </div>
         </div>
         <!-- //vod -->
 
-
         <!-- year -->
-				<section class="overFlow_wrap">
-        <div class="tickerwrapper">
-          <div class="years-ticker ticker">
-            <span class="ticker-item">2016</span>
-            <span class="ticker-item">2017</span>
-            <span class="ticker-item">2018</span>
-            <span class="ticker-item">2019</span>
-            <span class="ticker-item">2020</span>
-            <span class="ticker-item">2021</span>
-            <span class="ticker-item this-year"><b>2022</b></span>
+        <section class="overFlow_wrap">
+          <div class="tickerwrapper">
+            <div class="years-ticker ticker">
+              <span class="ticker-item">2016</span>
+              <span class="ticker-item">2017</span>
+              <span class="ticker-item">2018</span>
+              <span class="ticker-item">2019</span>
+              <span class="ticker-item">2020</span>
+              <span class="ticker-item">2021</span>
+              <span class="ticker-item this-year"><b>2022</b></span>
+            </div>
           </div>
-        </div>
-				</section>
+        </section>
         <!--// year -->
-   
+
         <!--// message -->
         <img src="./images/bg.png" class="bg-img2" />
         <div class="kiada-cheer">
           <div class="cheer-title">CONGRATULATIONS</div>
           <div class="cheer-text">응원메세지</div>
-					
+
           <div class="cheer-wrap">
             <div class="video-bg">
-              <div class="cheer-video-wrap">						
-								<iframe width="1475" height="823" src="https://www.youtube.com/embed/1YMFUht3Ohk?controls=0&autoplay=1&mute=1&loop=1&playlist=1YMFUht3Ohk"
-								title="[KIADA2022] 댄서 팝핀현준 & 국악인 박애리 응원 메세지" 
-								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="cheer-video-wrap">
+                <iframe
+                  width="1475"
+                  height="823"
+                  src="https://www.youtube.com/embed/1YMFUht3Ohk?controls=0&autoplay=1&mute=1&loop=1&playlist=1YMFUht3Ohk"
+                  title="[KIADA2022] 댄서 팝핀현준 & 국악인 박애리 응원 메세지"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
                 <!-- <img src="./images/cheers-wrap.png" />-->
                 <div class="cheer-video-text">
                   <div class="name-txt01">팝핀현준&박애리</div>
@@ -626,15 +638,14 @@
                 </div>
               </div>
             </div>
-						
+
             <div class="message-wrap">
               <div class="messages">
                 <div class="message-box m-box1">
                   <div>
                     <p>
-                      안녕하세요. 국립발레단 단장 겸 예술감독 강수진입니다.<br/>
-											제 7회 대한민국장애인국제무용제의 개최를 진심으로 축하드리며 뜻 깊은 무용제의 개최를 위해 애써주신 모든 무용예술인 여러분께
-                      깊은 감사의 인사를 드립니다.
+                      안녕하세요. 국립발레단 단장 겸 예술감독 강수진입니다.<br />
+                      제 7회 대한민국장애인국제무용제의 개최를 진심으로 축하드리며 뜻 깊은 무용제의 개최를 위해 애써주신 모든 무용예술인 여러분께 깊은 감사의 인사를 드립니다.
                     </p>
                     <p>
                       다양한 작품들로 무용제를 준비한 안무가와 무용수들에게 따뜻한 응원과 박수 부탁드리며, 앞으로도 대한민국장애인국제무용제가 모든 무용예술인들이 마음 껏 창작활동을 펼칠 수 있는
@@ -653,10 +664,10 @@
                 <div class="message-box nomargin m-box2">
                   <div>
                     <p>
-                      모든 사람은 그 자체로 예술작품이라고 생각합니다.<br/>
-											장애인 무용수들은 특별한 아름다움을 가진 최고의 예술 작품입니다.<br />
+                      모든 사람은 그 자체로 예술작품이라고 생각합니다.<br />
+                      장애인 무용수들은 특별한 아름다움을 가진 최고의 예술 작품입니다.<br />
                       감동적이고 멋진 공연에 많은 분들이 함께 해주시길 바랍니다. <br />
-											제 7회 대한민국장애인국제무용제를 진심으로 축하하고 응원합니다!
+                      제 7회 대한민국장애인국제무용제를 진심으로 축하하고 응원합니다!
                     </p>
                   </div>
                   <div>
@@ -674,8 +685,8 @@
                       ㅡ 미국 무용가 엘리스 셰퍼드<br />
                     </p>
                     <p>
-                      장애인 무용수들이 가지고 있는 그대로를 표현하는 그 자체가 이미 의미가 있고 기존의 무용에서 볼 수 없는 전혀 새로운 것.<br/>
-											장애인과 비장애인의 경계를 허무는 대한민국의 자랑스러운 무용축제 KIADA 2022를 응원합니다.
+                      장애인 무용수들이 가지고 있는 그대로를 표현하는 그 자체가 이미 의미가 있고 기존의 무용에서 볼 수 없는 전혀 새로운 것.<br />
+                      장애인과 비장애인의 경계를 허무는 대한민국의 자랑스러운 무용축제 KIADA 2022를 응원합니다.
                     </p>
                   </div>
                   <div>
@@ -688,8 +699,10 @@
                 </div>
                 <div class="message-box nomargin m-box4">
                   <div>
-                    <p>제7회 대한민국장애인국제무용제 개최를 축하드립니다. 작년 제6회 대한민국장애인국제무용제에서 프로젝트 이인과 함께<br/>
-										&lt;무용수 되기&gt; 라는 작품으 로 공연을 올린바 있습니다.</p>
+                    <p>
+                      제7회 대한민국장애인국제무용제 개최를 축하드립니다. 작년 제6회 대한민국장애인국제무용제에서 프로젝트 이인과 함께<br />
+                      &lt;무용수 되기&gt; 라는 작품으 로 공연을 올린바 있습니다.
+                    </p>
                     <p>
                       그때 만들었던 공연이 그간 발전을 거쳐서 현재 독일에서 열리고 있는 무용 축제에 공연을 하러 왔고 독일에서 촬영을 진행하고 있습니다. 저희가 대한민국장애인국제무용제를 통해서 만났던
                       좋은 관객들, 비평들, 다른 무용수들과의 만남을 통해 많은 것을 배우고 발전할 수 있었습니다.<br />
@@ -709,11 +722,71 @@
             </div>
           </div>
         </div>
-				<!-- support -->
-				<!-- dummy -->
-				<div style="margin-top: 200px"></div>
-</div>
-<!-- content -->
+        <!-- support -->
+        <!-- dummy -->
+        <div style="margin-top: 200px"></div>
+      </div>
+      <!-- content -->
+
+      <div class="kiada-support">
+        <div class="support-wrap">
+          <ul>
+            <li>
+              <div class="support-title">주최 SUPERVISION</div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-supervision.svg" />
+              </a>
+            </li>
+            <li class="left-111">
+              <div class="support-title">주관 SPONSORSHIP</div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-organizer.svg" />
+              </a>
+            </li>
+            <li class="dummy">
+              <img src="../images/sec03_dummy.png" />
+            </li>
+            <li class="dummy">
+              <img src="../images/sec03_dummy.png" />
+            </li>
+          </ul>
+        </div>
+        <div class="support-wrap" style="margin-top: 50px">
+          <ul style="align-items: center">
+            <li>
+              <div class="support-title">후원 SUPPORT</div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-sponsor-1.svg" />
+              </a>
+            </li>
+            <li>
+              <div class="support-title dummy"></div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-sponsor-2.svg" />
+              </a>
+            </li>
+            <li>
+              <div class="support-title dummy"></div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-sponsor-3.svg" />
+              </a>
+            </li>
+            <li>
+              <div class="support-title dummy"></div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-sponsor-4.svg" />
+              </a>
+            </li>
+            <li>
+              <div class="support-title dummy"></div>
+              <a href="javascript:void(0)">
+                <img src="../images/logo-sponsor-5.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- //support -->
       <footer class="footer">
         <div class="footer-wrap">
           <div class="footer-left">
@@ -733,24 +806,45 @@
           </div>
         </div>
       </footer>
+
+      <script>
+        $(".dep1 .dep1_a").click(function () {
+          $(".lnr-chevron-up").attr("class", "lnr lnr-chevron-down");
+          $(".dep2").hide();
+          $(this).next(".dep2").slideToggle();
+          $(this).children("span").attr("class", "lnr lnr-chevron-up");
+        });
+
+        $(".open_btn").click(function () {
+          if ($(".mobile-gnb").hasClass("hide")) {
+            $(".mobile-gnb").removeClass("hide");
+            $(".mobile-bg").removeClass("hide");
+          } else {
+            $(".dep2").hide();
+            $(".mobile-gnb").addClass("hide");
+            $(".mobile-bg").addClass("hide");
+            $(".dep1 > li").removeClass("over");
+          }
+        });
+        $(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+              $(".goTopBtn").fadeIn();
+            } else {
+              $(".goTopBtn").fadeOut();
+            }
+          });
+          $(".goTopBtn").click(function () {
+            $("html, body").animate(
+              {
+                scrollTop: 0,
+              },
+              400
+            );
+            return false;
+          });
+        });
+      </script>
     </div>
   </body>
 </html>
-<script>
-  function addOver(id) {
-    if ($("#" + id).hasClass("over")) {
-      $("#" + id).removeClass("over");
-    } else {
-      $("#" + id).addClass("over");
-    }
-  }
-  $(".open_btn").click(function () {
-    if ($(".mobile-gnb").hasClass("hide")) {
-      $(".mobile-gnb").removeClass("hide");
-      $(".mobile-bg").removeClass("hide");
-    } else {
-      $(".mobile-gnb").addClass("hide");
-      $(".mobile-bg").addClass("hide");
-    }
-  });
-</script>
